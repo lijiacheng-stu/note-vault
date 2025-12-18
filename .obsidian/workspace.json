@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "范式/关于文献查找.md",
+                "file": "范式/关于学习计算机知识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "关于文献查找"
+              "title": "关于学习计算机知识"
             }
           }
         ]
@@ -182,8 +182,9 @@
   },
   "active": "665c863eb6203152",
   "lastOpenFiles": [
-    "Pasted image 20240313210344.png",
     "范式/关于文献查找.md",
+    "范式/关于学习计算机知识.md",
+    "Pasted image 20240313210344.png",
     "任务/生活任务/购买任务.md",
     "任务/老师任务/12月5日任务.md",
     "New 文本文档.txt",
@@ -216,7 +217,6 @@
     "基础理论/ML/重要方法.md",
     "Pasted image 20251125120010.png",
     "Pasted image 20251123214231.png",
-    "Pasted image 20251121150946.png",
     "基础理论/ML/ch1 the machine learning landscape.md",
     "考试/算法设计与分析/1.前置条件.md",
     "基础理论/linux/前期准备.md",
