@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "332fdd0eb5ab387d",
+        "id": "12a6506cde936849",
         "type": "tabs",
         "children": [
           {
-            "id": "e4e6d23a49aa8e1b",
+            "id": "93a09e8751aaeb93",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "软件/docker/英语.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "英语"
+              "title": "New tab"
             }
           }
         ]
@@ -176,7 +172,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,10 +187,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e4e6d23a49aa8e1b",
+  "active": "93a09e8751aaeb93",
   "lastOpenFiles": [
-    "范式/关于文献查找.md",
+    "Untitled 2.base",
+    "Untitled 1.base",
     "软件/docker/英语.md",
+    "范式/关于文献查找.md",
     "软件/docker",
     "Untitled.base",
     "范式/关于学习计算机知识.md",
@@ -233,11 +232,9 @@
     "Pasted image 20251125120010.png",
     "基础理论/ML/ch1 the machine learning landscape.md",
     "考试/算法设计与分析/1.前置条件.md",
-    "基础理论/linux/前期准备.md",
     "基础理论/vim/准备阶段",
     "基础理论/LLM",
     "基础理论/vim",
-    "基础理论/linux",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
