@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/英语1.md",
+                "file": "基础理论/ML/英语2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "英语1"
+              "title": "英语2"
             }
           }
         ]
@@ -193,10 +193,10 @@
   },
   "active": "93a09e8751aaeb93",
   "lastOpenFiles": [
-    "基础理论/ML/英语二.md",
+    "基础理论/ML/英语1.md",
+    "基础理论/ML/英语2.md",
     "基础理论/ML/综合.md",
     "基础理论/node.js/英文.md",
-    "基础理论/ML/英语1.md",
     "基础理论/node.js",
     "Untitled 2.base",
     "Untitled 1.base",
