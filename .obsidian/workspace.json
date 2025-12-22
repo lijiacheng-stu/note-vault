@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/node.js/英文.md",
+                "file": "基础理论/ML/英语1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "英文"
+              "title": "英语1"
             }
           }
         ]
@@ -193,8 +193,10 @@
   },
   "active": "93a09e8751aaeb93",
   "lastOpenFiles": [
-    "基础理论/ML/英语1.md",
+    "基础理论/ML/英语二.md",
+    "基础理论/ML/综合.md",
     "基础理论/node.js/英文.md",
+    "基础理论/ML/英语1.md",
     "基础理论/node.js",
     "Untitled 2.base",
     "Untitled 1.base",
@@ -230,10 +232,8 @@
     "考试/自然辩证法/背诵.md",
     "考试/自然辩证法",
     "考试/入学考试.md",
-    "基础理论/ML/英语二.md",
     "基础理论/ML/ch3 Classification.md",
     "基础理论/ML/ch2 End-to-End Machine Learning Project.md",
-    "基础理论/ML/综合.md",
     "基础理论/ML/重要方法.md",
     "Pasted image 20251125120010.png",
     "基础理论/ML/ch1 the machine learning landscape.md",
