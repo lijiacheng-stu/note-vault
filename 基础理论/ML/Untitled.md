@@ -1,4 +1,16 @@
 
+
+1. **《Spatio-Temporal Graph ODE Networks for Traffic Flow Prediction》**
+    - **会议 / 期刊等级**：关联研究成果常被机器学习与数据挖掘领域相关 CCF - A 类会议引用（如 NeurIPS、ICML 方向扩展研究），其核心模型 ST - GODE 是时空预测领域的创新架构。
+    - **核心内容**：提出时空图常微分方程网络（ST - GODE），结合图神经网络与常微分方程，解决传统模型难以精准捕捉交通流量中动态时空依赖关系的问题。通过对交通流的连续性特征建模，降低预测误差，尤其适配 PeMS 数据集的时序连续性特点。
+    - **PeMS 数据集使用**：选用 PeMS04 数据集作为核心验证数据，该子集包含加州 4 号公路交通探测器采集的流量、速度和占用率数据，匹配模型对连续时空数据的需求。
+    - **开源信息**：代码与数据集可通过 GitHub 仓库获取，仓库地址为[https://github.com/ebasatemesgen/Pems_Dataset](https://github.com/ebasatemesgen/Pems_Dataset) ，可通过 git clone 命令直接下载，包含数据集预处理脚本和模型训练全流程代码。
+
+
+
+
+
+
 ```
 # TODO1: Set the minimum required version of CMake to be 3.23
 
