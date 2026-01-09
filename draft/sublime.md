@@ -5,4 +5,8 @@
 	- 打开的界面叫做 Command Palette`[ˈpælɪt]`（调色板）
 	- 在Tools --> Command Palette等价打开
 - mac中，如何修改对json文件的默认打开软件
-	- 
+	- 在finder中，找到一个json文件
+	- 右键-->显示简介-->打开方式
+	- 选择喜欢的，比如sublime Text
+- 如何使用sublime编写一个C语言程序，并运行
+- 为啥我的sublime没有sidebar呢？
