@@ -1,0 +1,8 @@
+- 如何对一个很长的行，多‘行’显示（仍然处于一行，就像vim那样）
+	- 软换行，视觉上多行显示，但逻辑上仍然是一行
+	- 在view --> word wrap中可以切换
+- 如何打开cmd + shift + p对应的界面
+	- 打开的界面叫做 Command Palette`[ˈpælɪt]`（调色板）
+	- 在Tools --> Command Palette等价打开
+- mac中，如何修改对json文件的默认打开软件
+	- 
