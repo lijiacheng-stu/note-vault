@@ -23,12 +23,14 @@
             "id": "ba25c021bb9cc54a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20260110000302.png"
+                "file": "考试/算法设计与分析/第1次作业/算法设计1.1 YY and Rectangle.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260110000302"
+              "icon": "lucide-file",
+              "title": "算法设计1.1 YY and Rectangle"
             }
           }
         ],
@@ -187,8 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,6 +205,10 @@
   },
   "active": "ba25c021bb9cc54a",
   "lastOpenFiles": [
+    "考试/算法设计与分析/1.前置条件.md",
+    "考试/算法设计与分析/第1次作业/算法设计1.1 YY and Rectangle.md",
+    "考试/算法设计与分析/第1次作业",
+    "Pasted image 20260110000302.png",
     "Pasted image 20260110000748.png",
     "Pasted image 20260110161444.png",
     "draft/文献阅读 1月11日.md",
@@ -214,8 +219,6 @@
     "Pasted image 20260110225814.png",
     "Pasted image 20260110225503.png",
     "Pasted image 20260110225356.png",
-    "Pasted image 20260110225326.png",
-    "Pasted image 20260110224336.png",
     "draft/修改意见.md",
     "draft/sublime.md",
     "draft/ssh.md",
@@ -246,10 +249,8 @@
     "过时/编程语言/c++/cmake同clion的使用.md",
     "考试/实验室安全考试/通过.md",
     "任务/生活任务/购买任务.md",
-    "任务/老师任务/12月5日任务.md",
     "New 文本文档.txt",
     "范式",
-    "任务/老师任务",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
