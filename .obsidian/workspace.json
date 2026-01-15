@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/文献阅读1月25日.md",
+                "file": "draft/背诵.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文献阅读1月25日"
+              "title": "背诵"
             }
           },
           {
@@ -220,9 +220,13 @@
   },
   "active": "ba25c021bb9cc54a",
   "lastOpenFiles": [
+    "draft/Untitled.md",
+    "draft/背诵.md",
+    "draft/文献阅读 1月11日.md",
+    "draft/文献阅读1月25日.md",
+    "draft/sublime.md",
     "Pasted image 20260115121058.png",
     "考试/算法设计与分析/第3次作业/code 3.5.md",
-    "draft/文献阅读1月25日.md",
     "考试/算法设计与分析_副本/第6次作业/算法设计6.5 路径覆盖.md",
     "考试/算法设计与分析_副本/第6次作业/算法设计6.4 扫雷.md",
     "考试/算法设计与分析_副本/第6次作业/算法设计6.3 水管.md",
@@ -243,9 +247,6 @@
     "考试/算法设计与分析_副本/第5次作业/code 5.3.md",
     "考试/算法设计与分析_副本/第5次作业/code 5.2.md",
     "考试/算法设计与分析_副本/第5次作业/code 5.1.md",
-    "考试/算法设计与分析_副本/第4次作业/算法设计4.5 传送门.md",
-    "考试/算法设计与分析_副本/第4次作业/算法设计4.4 小明卖股票.md",
-    "考试/算法设计与分析_副本/第4次作业/算法设计4.3 小球.md",
     "考试/算法设计与分析_副本/第6次作业",
     "考试/算法设计与分析_副本/第5次作业",
     "考试/算法设计与分析_副本/第4次作业",
@@ -265,7 +266,6 @@
     "Pasted image 20260110230001.png",
     "Pasted image 20260110225814.png",
     "Pasted image 20260110225503.png",
-    "Pasted image 20260110225356.png",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
