@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/背诵.md",
+                "file": "考试/时空数据挖掘/ppt1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "背诵"
+              "title": "ppt1"
             }
           },
           {
@@ -220,8 +220,11 @@
   },
   "active": "ba25c021bb9cc54a",
   "lastOpenFiles": [
-    "draft/Untitled.md",
+    "考试/Untitled.md",
+    "考试/时空数据挖掘/ppt1.md",
+    "考试/时空数据挖掘",
     "draft/背诵.md",
+    "draft/Untitled.md",
     "draft/文献阅读 1月11日.md",
     "draft/文献阅读1月25日.md",
     "draft/sublime.md",
@@ -245,8 +248,6 @@
     "考试/算法设计与分析_副本/第5次作业/code 5.5.md",
     "考试/算法设计与分析_副本/第5次作业/code 5.4.md",
     "考试/算法设计与分析_副本/第5次作业/code 5.3.md",
-    "考试/算法设计与分析_副本/第5次作业/code 5.2.md",
-    "考试/算法设计与分析_副本/第5次作业/code 5.1.md",
     "考试/算法设计与分析_副本/第6次作业",
     "考试/算法设计与分析_副本/第5次作业",
     "考试/算法设计与分析_副本/第4次作业",
@@ -256,7 +257,6 @@
     "考试/算法设计与分析_副本",
     "考试/算法设计与分析/第6次作业",
     "考试/算法设计与分析/第5次作业",
-    "考试/算法设计与分析/第4次作业",
     "Pasted image 20260110000302.png",
     "Pasted image 20260110000748.png",
     "Pasted image 20260110161444.png",
