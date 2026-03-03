@@ -52,5 +52,7 @@ TLU = threshold logic unit 阈值逻辑单元
 2.3 特点
 - efficiently compute the outputs of a layer of artificial neurons for several instances at once.
 ![[Pasted image 20260303165233.png]]
-- 输出的结果的形状：m * n
-- 第k个实例的第j个TLU的输出结果：X的k行，W的j列 + b的j列，对这个求激活函数
+	- 输出的结果的形状：m * n
+	- 第k个实例的第j个TLU的输出结果：X的k行，W的j列 + b的j列，对这个求激活函数
+- 单层感知机是线性模型，无法解决XOR问题
+### 3. 
