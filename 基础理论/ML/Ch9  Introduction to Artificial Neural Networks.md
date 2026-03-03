@@ -27,3 +27,26 @@
 ### 3. 图像
 ![[Pasted image 20260303161006.png]]
 ![[Pasted image 20260303161250.png]]
+## 三、感知机perceptron
+TLU = threshold logic unit 阈值逻辑单元
+### 1. TLU
+#### 1.1 组成
+- step function 阶跃函数 （又是激活函数之一）
+- linear function 线性函数
+#### 1.2 作用机制
+- input：$\mathbf{x}$
+- output：$h_\mathbf{w}(\mathbf{x}) = \operatorname{step}(\mathbf{w}^T \mathbf{x} + b)$
+#### 1.3 注意
+1.3.1 step指代阶跃函数，具体的函数是如下：
+	- Heaviside step function /ˈhevɪsaɪd/ （最常见）
+	-  sign function 
+1.3.2 一个TLU的参数是：$\mathbf{w}和b$
+1.3.3 结构图：
+![[Pasted image 20260303164233.png]]
+### 2. Perceptron
+2.1 定义：
+-  _fully connected layer_, or a _dense layer_：A perceptron is composed of one or more TLUs organized in a single layer, where every TLU is connected to every input.
+2.2 特点
+- efficiently compute the outputs of a layer of artificial neurons for several instances at once.
+![[Pasted image 20260303165233.png]]
+- 
