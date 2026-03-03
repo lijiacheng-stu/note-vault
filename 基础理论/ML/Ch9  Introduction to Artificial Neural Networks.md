@@ -46,7 +46,11 @@ TLU = threshold logic unit 阈值逻辑单元
 ### 2. Perceptron
 2.1 定义：
 -  _fully connected layer_, or a _dense layer_：A perceptron is composed of one or more TLUs organized in a single layer, where every TLU is connected to every input.
-2.2 特点
+2.2 相关知识点：
+-  invented in 1957 by Frank Rosenblatt
+- The perceptron training algorithm proposed by Rosenblatt was largely inspired by _Hebb’s rule_.
+2.3 特点
 - efficiently compute the outputs of a layer of artificial neurons for several instances at once.
 ![[Pasted image 20260303165233.png]]
-- 
+- 输出的结果的形状：m * n
+- 第k个实例的第j个TLU的输出结果：X的k行，W的j列 + b的j列，对这个求激活函数
