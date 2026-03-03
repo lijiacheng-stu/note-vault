@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "考试/时空数据挖掘/操作.md",
+                "file": "考试/时空数据挖掘/提示词.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "操作"
+              "title": "提示词"
             }
           },
           {
@@ -220,8 +220,8 @@
   },
   "active": "ba25c021bb9cc54a",
   "lastOpenFiles": [
-    "考试/时空数据挖掘/提示词.md",
     "考试/时空数据挖掘/操作.md",
+    "考试/时空数据挖掘/提示词.md",
     "考试/时空数据挖掘/ppt1.md",
     "考试/时空数据挖掘/任务二.md",
     "考试/Untitled.md",
