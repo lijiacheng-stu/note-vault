@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "重要方法"
             }
+          },
+          {
+            "id": "db3572aae67023b1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,8 +202,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ef6d79bdfb436d04",
+  "active": "db3572aae67023b1",
   "lastOpenFiles": [
+    "基础理论/ML/重要方法.md",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
     "Pasted image 20260303165233.png",
     "Pasted image 20260303164233.png",
@@ -201,7 +213,6 @@
     "Pasted image 20260303161006.png",
     "基础理论/vim/2. Simple Editing.md",
     "基础理论/vim/1. Introducing Vi And Vim.md",
-    "基础理论/ML/重要方法.md",
     "基础理论/ML/英语2.md",
     "基础理论/ML/英语1.md",
     "Pasted image 20260110230139.png",
