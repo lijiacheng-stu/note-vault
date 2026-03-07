@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "10b9de6cdf55b70a",
+        "id": "33e270449ae31ad3",
         "type": "tabs",
         "children": [
           {
-            "id": "ef6d79bdfb436d04",
+            "id": "69e1074cdf47bd95",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 461.5
   },
   "right": {
     "id": "2f4f775a6d30f43d",
@@ -191,15 +191,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ef6d79bdfb436d04",
+  "active": "69e1074cdf47bd95",
   "lastOpenFiles": [
-    "Pasted image 20260307221728.png",
     "Pasted image 20260307215942.png",
+    "draft/文献阅读3月8日.md",
+    "Pasted image 20260307221728.png",
     "Pasted image 20260307212700.png",
     "Pasted image 20260307211743.png",
     "Pasted image 20260307211132.png",
     "draft/Untitled.md",
-    "draft/文献阅读3月8日.md",
     "draft/文献阅读1月25日.md",
     "基础理论/ML/重要方法.md",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
@@ -223,7 +223,6 @@
     "draft/背诵.md",
     "draft/文献阅读 1月11日.md",
     "draft/sublime.md",
-    "Pasted image 20260115121058.png",
     "考试/算法设计与分析/第3次作业/code 3.5.md",
     "考试/算法设计与分析_副本/第6次作业/算法设计6.5 路径覆盖.md",
     "考试/算法设计与分析_副本/第6次作业/算法设计6.4 扫雷.md",
