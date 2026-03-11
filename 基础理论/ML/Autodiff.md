@@ -2,7 +2,11 @@
 ## 一、words
 - dual number 对偶数 $a + b\epsilon$
 
-## 二、auto
+## 二、autodiff
+
+- 目标：计算函数在某点处的微分，而不是计算一个函数在任意点处的微分。
+
+
 ### 2.Finite Difference Approximation
 #### 2.1 前置知识
 - $\displaystyle \frac{\partial f}{\partial x_i}(a_1,a_2,...,a_n)= \lim_{\epsilon \to 0} \frac{f(a_1,a_2,...,a_i + \epsilon,...,a_n)-f(a_1,a_2,...,a_n)}{\epsilon}\approx\frac{f(a_1,a_2,...,a_i + \epsilon,...,a_n)-f(a_1,a_2,...,a_n)}{\epsilon}|_{\epsilon=10^{-n}}$
@@ -34,4 +38,6 @@
 - 结果：得到了$f$关于每一个$x_i$在$(a_1,a_2,...,a_n)$的偏导数，从而得到$f(x_1,x_2,...,x_n)$在$f(a_1,a_2,...,a_n)$处的梯度，实现目标。
 #### 3.3 分析
 - 计算的次数：每走一次计算图能够得到函数关于其中一个变量的偏导数，所以$n$个变量就是$n$次。
-- 计算偏导的方向：从计算图的input的方向向output方向，所以是前向
+- 计算偏导的方向：从计算图的input的方向向output方向，所以叫前向
+
+
