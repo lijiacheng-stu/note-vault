@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/Autodiff.md",
+                "file": "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Autodiff"
+              "title": "Ch9  Introduction to Artificial Neural Networks"
             }
           }
         ]
@@ -193,9 +193,9 @@
   },
   "active": "69e1074cdf47bd95",
   "lastOpenFiles": [
+    "基础理论/ML/Autodiff.md",
     "Pasted image 20260309100139.png",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
-    "基础理论/ML/Autodiff.md",
     "draft/文献阅读3月8日.md",
     "Pasted image 20260307215942.png",
     "Pasted image 20260307221728.png",
@@ -214,7 +214,6 @@
     "基础理论/vim/1. Introducing Vi And Vim.md",
     "基础理论/ML/英语2.md",
     "基础理论/ML/英语1.md",
-    "Pasted image 20260110230139.png",
     "考试/算法设计与分析/第1次作业/算法设计1.1 YY And Array.md",
     "考试/时空数据挖掘/提示词.md",
     "考试/时空数据挖掘/操作.md",

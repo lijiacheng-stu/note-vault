@@ -48,11 +48,29 @@ TLU = threshold logic unit 阈值逻辑单元
 -  _fully connected layer_, or a _dense layer_：A perceptron is composed of one or more TLUs organized in a single layer, where every TLU is connected to every input.
 2.2 相关知识点：
 -  invented in 1957 by Frank Rosenblatt
-- The perceptron training algorithm proposed by Rosenblatt was largely inspired by _Hebb’s rule_.
+- The perceptron training algorithm proposed by Rosenblatt was largely inspired by _Hebb’s rule_
 2.3 特点
-- efficiently compute the outputs of a layer of artificial neurons for several instances at once.
-![[Pasted image 20260303165233.png]]
+- efficiently compute the outputs of a layer of artificial neurons for several instances at once.![[Pasted image 20260303165233.png]]
 	- 输出的结果的形状：m * n
+	- X输入矩阵。一行对应一个实例，一列对应一个输入特征
+	- W权重矩阵，包含了感知机的所有连接权重。一行对应一个输入特征，一列对应一个神经元。
+		- XW：矩阵相乘的理解--> 微观。 $m*n 乘 n*t$
+			- X具有独立意义的单位是行。
+			- W具有独立意义的单位是列。
+			- 行列的数量相同，即可相乘。
+			- X的每一个实例（即，一行）。都要经过每一个神经元的处理（即，一列）。
+				- 有多少个实例，是灵活的。
+				- 有多少个神经元处理，是灵活的。
+			- X的第i个实例的处理结果放在结果第i行。X的第i个实例的第j个神经元处理的结果放在结果的第i行第j列。
+			- W的第i个神经元的处理结果放在结果的第i列。W的第i个神经元处理的第j个结果放在第j行第i列。
+	- b偏置向量，一个对应一个神经元。
+		- “矩阵+向量”：adding a vector to a matrix means adding it to every row in the matrix.
+	- $\phi$激活函数。
 	- 第k个实例的第j个TLU的输出结果：X的k行，W的j列 + b的j列，对这个求激活函数
+		- 每一个神经元都会处理每个一个实例。每个神经元的权重，只会处理某个特征。
 - 单层感知机是线性模型，无法解决XOR问题
+2.4 训练的思路
+- Perceptrons are trained using a variant of Hebb’s rule that takes into account the error made by the network when it makes a prediction; the perceptron learning rule reinforces connections that help reduce the error.
+- Hebb’s rule = “Cells that fire together, wire together”; =Donald Hebb suggested that when a biological neuron triggers another neuron often, the connection between these two neurons grows stronger.
+- 
 ### 3. 
