@@ -72,5 +72,20 @@ TLU = threshold logic unit 阈值逻辑单元
 2.4 训练的思路
 - Perceptrons are trained using a variant of Hebb’s rule that takes into account the error made by the network when it makes a prediction; the perceptron learning rule reinforces connections that help reduce the error.
 - Hebb’s rule = “Cells that fire together, wire together”; =Donald Hebb suggested that when a biological neuron triggers another neuron often, the connection between these two neurons grows stronger.
-- 
+
+
 ### 3. 
+对于FNN，10，20，30。input size决定每个神经元的连接权重的数量。
+认识：
+- output size 由该层的神经元数量决定，继而决定下一层神经元的连接权重的数量。
+- 确定一层感知机的结构，本质上是确定该层感知机神经元数量和每个神经元的连接权重数量。
+- 确定MLP，就是确定每一层感知机的结构。
+证明：对MLP，人为确定每一层所有隐藏层的神经元数量，即可确定整个MLP的结构。
+- 根据target维度，确定output layer的神经元数量
+- 又人为确定每一层所有隐藏层的神经元数量
+- 因此，确定了每一层感知机神经元的数量，下面仅仅需要确定每一层的每个神经元的连接权重的数量。
+- 对于第一个隐藏层，每个神经元的连接权重的数量等于input的维度数。
+- 任取第i层（i>1）感知机，每个神经元的连接权重的数量=i-1层的感知机的神经元数量
+- 由此，MLP的结构得知，得证。
+
+input size 确定第一个隐藏每个神经元的连接权重的数量。认为确定了
