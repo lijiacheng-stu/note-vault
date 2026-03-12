@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/PS/01 Getting To Know The Work Area.md",
+                "file": "基础理论/ML/重要方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 Getting To Know The Work Area"
+              "title": "重要方法"
             }
           }
         ]
@@ -193,15 +193,15 @@
   },
   "active": "69e1074cdf47bd95",
   "lastOpenFiles": [
+    "基础理论/ML/ch3 Classification.md",
+    "基础理论/PS/01 Getting To Know The Work Area.md",
     "Pasted image 20260312152616.png",
     "Pasted image 20260312152025.png",
     "Pasted image 20260312150936.png",
     "基础理论/ML/ch1 the machine learning landscape.md",
-    "基础理论/ML/ch3 Classification.md",
     "基础理论/ML/综合.md",
     "基础理论/DeepLearning/语素.md",
     "基础理论/DeepLearning/英语.md",
-    "基础理论/PS/01 Getting To Know The Work Area.md",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
     "基础理论/PS",
     "基础理论/ML/Autodiff.md",
@@ -216,7 +216,6 @@
     "draft/文献阅读1月25日.md",
     "基础理论/ML/重要方法.md",
     "Pasted image 20260303165233.png",
-    "Pasted image 20260303164233.png",
     "考试/算法设计与分析/第1次作业/算法设计1.4  YY and Rectangle.md",
     "基础理论/vim/2. Simple Editing.md",
     "基础理论/vim/1. Introducing Vi And Vim.md",
