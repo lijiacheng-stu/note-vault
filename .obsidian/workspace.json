@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
+                "file": "基础理论/ML/重要方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch9  Introduction to Artificial Neural Networks"
+              "title": "重要方法"
             }
           }
         ]
@@ -193,17 +193,18 @@
   },
   "active": "69e1074cdf47bd95",
   "lastOpenFiles": [
+    "基础理论/ML/综合.md",
+    "基础理论/ML/Autodiff.md",
+    "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
+    "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
     "基础理论/ML/重要方法.md",
     "基础理论/ML/ch3 Classification.md",
-    "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
-    "基础理论/ML/Autodiff.md",
     "Pasted image 20260312162129.png",
     "基础理论/PS/01 Getting To Know The Work Area.md",
     "Pasted image 20260312152616.png",
     "Pasted image 20260312152025.png",
     "Pasted image 20260312150936.png",
     "基础理论/ML/ch1 the machine learning landscape.md",
-    "基础理论/ML/综合.md",
     "基础理论/DeepLearning/语素.md",
     "基础理论/DeepLearning/英语.md",
     "基础理论/PS",
