@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/重要方法.md",
+                "file": "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "重要方法"
+              "title": "Ch10 Build Neural Networks With PyTorch"
             }
           }
         ]
@@ -193,11 +193,11 @@
   },
   "active": "69e1074cdf47bd95",
   "lastOpenFiles": [
+    "基础理论/ML/重要方法.md",
     "基础理论/ML/综合.md",
     "基础理论/ML/Autodiff.md",
     "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
-    "基础理论/ML/重要方法.md",
     "基础理论/ML/ch3 Classification.md",
     "Pasted image 20260312162129.png",
     "基础理论/PS/01 Getting To Know The Work Area.md",
