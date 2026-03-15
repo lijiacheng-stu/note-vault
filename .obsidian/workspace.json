@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/LLM/Ch2 Tokens And Embeddings.md",
+                "file": "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch2 Tokens And Embeddings"
+              "title": "Ch10 Build Neural Networks With PyTorch"
             }
           }
         ]
@@ -193,8 +193,8 @@
   },
   "active": "69e1074cdf47bd95",
   "lastOpenFiles": [
-    "基础理论/LLM/Ch1 An Introduction to Large Language Models.md",
     "基础理论/LLM/Ch2 Tokens And Embeddings.md",
+    "基础理论/LLM/Ch1 An Introduction to Large Language Models.md",
     "基础理论/PS/01 Getting To Know The Work Area.md",
     "Pasted image 20260314201702.png",
     "学习日记/2026年3月14日.md",
