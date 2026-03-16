@@ -35,4 +35,6 @@
 - gradient tracking
 	- PyTorch will automatically keep track of all operations involving `x`：this is needed because PyTorch must capture the computation graph in order to run backprop on it and obtain the derivative of `f` with regard to `x`. In this computation graph, the tensor `x` is a _leaf node_.
 
-ru
+h没有被依赖，因此，h += 1 后，f.backward()成功。
+g被cos依赖，因此，g +=1后， f.backward()失败。
+f被exp依赖，因此， f +=1后, f.backward()失败。
