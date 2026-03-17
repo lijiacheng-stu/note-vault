@@ -57,7 +57,7 @@ f被exp依赖，因此， f +=1后, f.backward()失败。
 - no-leaf tensor
 - backward function node
 - AccumulateGrad node
-
+- in-place operation: 变量名指向一个对象。非原地操作，操作会产生新的对象，让变量名指向新的对象。而原地操作，操作不对产生新的操作，变量名仍然指向原对象。
 ## 反向传播中，一个节点的任务
 - f对当前节点的梯度已知
 	- 反向传播过程中，有其计算图中的下游节点求得。
@@ -85,3 +85,7 @@ PyTorch comes with an efficient implementation of reverse-mode auto-differentia
 	- `_save_result`:记录该计算节点的输出值所对应的张量
 	- `_save_self`：记录该计算节点的输入值所对应的张量
 - 显示声明requires_grad属性的变量，指向AcumulateGrad node。由于需要从AcumulateGrad node中提取梯度，因此，必须有变量指向该node。当x += 1这类自增操作出现时，autograd会生成backward function node，并让x指向该 节点，这导致AcumulateGrad node没有被指向，出现运行时错误。其中一个解决方案是关闭autograd，**不生成**backward function node，x仍然指向AcumulateGrad node，从而避免错误。这样的方法是`with torch.no_grad():`
+	- x = x + 1会让AcumulateGrad node没有被指向
+	- y = x 
+	- x = x +1
+- 显示声明requires_grad属性为True的变量x所指向的对象leaf tensor，会指向AcumulateGrad node。由于需要从AcumulateGrad node中提取梯度，因此，必须需要有leaf tensor对象指向该node。当x += 1这类自增操作出现时，x所指向的对象leaf tensor的存储的数值会+1，由于autograd，跟踪了x += 1，会生成AddBackward0，且leaf tensor会指向新生成的AddBackward0，导致AcumulateGrad node没有对象指它。怎么避免呢？在`with torch.no_grad():`中操作 x += 1。因为关闭了autograd，因此，不会生成AddBackward0，leaf tensor存储的数值实现+1，仍然指向AcumulateGrad node。x = x + 1为什么允许呢？x = x + 1是，生成新的tensor对象，x指向它。但是原leaf tensor仍然存在，指向AcumulateGrad node。
