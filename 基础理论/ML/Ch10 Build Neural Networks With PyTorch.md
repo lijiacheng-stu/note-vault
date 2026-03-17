@@ -38,3 +38,7 @@
 h没有被依赖，因此，h += 1 后，f.backward()成功。
 g被cos依赖，因此，g +=1后， f.backward()失败。
 f被exp依赖，因此， f +=1后, f.backward()失败。
+
+
+- 
+
