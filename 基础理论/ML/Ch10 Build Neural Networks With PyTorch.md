@@ -41,9 +41,47 @@ f被exp依赖，因此， f +=1后, f.backward()失败。
 
 
 - mac上下载pytorch
+	- uv add torch
+		- : If you have a MacBook with MPS support ([Metal Performance Shaders](https://developer.apple.com/documentation/metalperformanceshaders)) then you don't need to upgrade the PyTorch libraries, as the default versions support MPS out of the box.
+	- uv add numpy
 - 对pytorch的底层，再进行归纳总结
+	- 
 - 对ch10阅读结束
 - 阅读大预言模型ch2
 - 寻找合适的图文检索的文章
-- 
 
+
+# Pytorch底层归纳
+## 术语
+- leaf tensor
+- no-leaf tensor
+- backward function node
+- AccumulateGrad node
+
+## 反向传播中，一个节点的任务
+- f对当前节点的梯度已知
+	- 反向传播过程中，有其计算图中的下游节点求得。
+- 当前节点的输入节点的值已知道
+	- 在前向传播时求到的
+- 任务：需要求该点对其输入节点的偏导数
+	- 将其输入节点按照该节点对应的符号组织在一起，然后求偏导
+	- 根据偏导结果自然知道该节点的上下文依赖
+		- exp：输出
+		- cos：输入
+		- mul：输入 
+## autogrid是什么
+### 定义
+PyTorch comes with an efficient implementation of reverse-mode auto-differentiation  called _autograd_
+### 做了什么呢？
+从动态的角度来讲：
+- 跟踪requires_grad属性为True的张量所参与的所有操作。存在新的操作，则在计算图生成新的node
+- 新的操作带来前向传播，在前向传播过程中，对新的node添加必要的在反向传播计算梯度时所需的依赖的上下文信息，存储在`_save_*`属性中。这个上下文信息总是指向张量对象，以及存储该张量在此前向传播过程中的版本信息，防止反向传播过程中，因为张量被篡改导致错误。tensor的_version存储了版本信息。
+	- `_version`是0，每修改一次自增1
+	- 记录上下文信息，而不是放置node在前向传播中的值，是为了避免不必要的计算和复制。
+从静态的角度来讲：
+- 对于tensor变量，通过x.grad_fn得到tensor变量所绑定的计算图节点
+- 计算图节点的next_functions属性，可以知道这个节点的输入节点
+- 通过dir(计算图节点),获得`_save_*`属性，从而只有需要用于梯度计算的张量信息。总是尽可能指向已有的变量对应对象的内存,若没有，也会内部生成。
+	- `_save_result`:记录该计算节点的输出值所对应的张量
+	- `_save_self`：记录该计算节点的输入值所对应的张量
+- 显示声明requires_grad属性的变量，指向AcumulateGrad node。由于需要从AcumulateGrad node中提取梯度，因此，必须有变量指向该node。当x += 1这类自增操作出现时，autograd会生成backward function node，并让x指向该 节点，这导致AcumulateGrad node没有被指向，出现运行时错误。其中一个解决方案是关闭autograd，**不生成**backward function node，x仍然指向AcumulateGrad node，从而避免错误。这样的方法是`with torch.no_grad():`
