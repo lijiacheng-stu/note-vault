@@ -40,5 +40,10 @@ g被cos依赖，因此，g +=1后， f.backward()失败。
 f被exp依赖，因此， f +=1后, f.backward()失败。
 
 
+- mac上下载pytorch
+- 对pytorch的底层，再进行归纳总结
+- 对ch10阅读结束
+- 阅读大预言模型ch2
+- 寻找合适的图文检索的文章
 - 
 
