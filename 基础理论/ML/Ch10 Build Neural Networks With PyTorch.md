@@ -90,10 +90,16 @@ PyTorch comes with an efficient implementation of reverse-mode auto-differentia
 	- x = x +1
 - 显示声明requires_grad属性为True的变量x所指向的对象leaf tensor，会指向AcumulateGrad node。由于需要从AcumulateGrad node中提取梯度，因此，必须需要有leaf tensor对象指向该node。当x += 1这类自增操作出现时，x所指向的对象leaf tensor的存储的数值会+1，由于autograd，跟踪了x += 1，会生成AddBackward0，且leaf tensor会指向新生成的AddBackward0，导致AcumulateGrad node没有对象指它。怎么避免呢？在`with torch.no_grad():`中操作 x += 1。因为关闭了autograd，因此，不会生成AddBackward0，leaf tensor存储的数值实现+1，仍然指向AcumulateGrad node。x = x + 1为什么允许呢？x = x + 1是，生成新的tensor对象，x指向它。但是原leaf tensor仍然存在，指向AcumulateGrad node。
 
-## torch.nn.Module有什么特别的？
-- parameters() / named_parameters()
+## torch.nn.Module有什么特别的，为什么自定义Module会继承这个类？
+- 参数/子模块注册与管理
+	- 查看参数和模块
+		- parameters() / named_parameters()
+		- children() / named_children()
+	- 对于可变数量参数和模块，使用`nn.ModuleList` or an `nn.ModuleDict` 和`nn.ParameterList` or an `nn.ParameterDict`进行注册和管理
+	- 
 - forward()
-- register_forward_hook()
-- register_backward_hook()
+- hook机制
+	- register_forward_hook()
+	- register_backward_hook()
 - can be called just like a regular function.
-- 
+	- 实现__call__函数，里面调用了forward函数。配合了register_forward_hook()注册的函数。
