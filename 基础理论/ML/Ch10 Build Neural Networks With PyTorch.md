@@ -103,3 +103,4 @@ PyTorch comes with an efficient implementation of reverse-mode auto-differentia
 	- register_backward_hook()
 - can be called just like a regular function.
 	- 实现__call__函数，里面调用了forward函数。配合了register_forward_hook()注册的函数。
+L=−c=1∑C​yc​log(y^​c​)
