@@ -104,3 +104,25 @@ PyTorch comes with an efficient implementation of reverse-mode auto-differentia
 - can be called just like a regular function.
 	- 实现__call__函数，里面调用了forward函数。配合了register_forward_hook()注册的函数。
 L=−c=1∑C​yc​log(y^​c​)
+
+前置条件：
+- 下载数据集
+- 设计model
+- 设计Loss Function 
+- 设计参数更新策略
+- 设计Validation metric
+
+训练的过程：(训练前需要先设定一组初始超参数；训练过程中可基于验证集表现进行调优或早停)
+- 预处理数据，得到X_train, y_train, X_valid, y_valid, X_test, y_test
+- 构建模型model
+- 循环n_epochs:
+	- 循环gradient decent step
+		- X_train向前传播model得到X_train的y_pred
+		- y_pred, y_train前向传播criterion得到loss
+		- 对loss反向传播得到model的参数的grad
+		- 用优化器更新参数
+		- 用优化器清除参数的梯度
+	- 在torch.no_grad()上下文中，跑这个epoch的验证指标：
+		- 方法一：y_pred, y_train得到验证指标值1， 用X_valid跑一次模型，得到y_valid_pred结合y_valid得到验证指标值2，以体现是否存在过拟合。
+		- 方法二：只跑X_valid得验证指标值，判断是否需要早停，跟踪模型性能变化。
+- 用X_test测试训练模型的泛化能力。
