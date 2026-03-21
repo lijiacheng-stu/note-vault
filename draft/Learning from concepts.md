@@ -6,4 +6,10 @@
 
 
 - vision-language feature r
-- 
+
+
+训练
+- CIRR
+- LaSCo
+- Hotel-CIR
+- CIRR_R
