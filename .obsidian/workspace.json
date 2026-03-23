@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 461.5,
-    "collapsed": true
+    "width": 461.5
   },
   "right": {
     "id": "2f4f775a6d30f43d",
@@ -194,6 +193,8 @@
   },
   "active": "69e1074cdf47bd95",
   "lastOpenFiles": [
+    "draft/解构手机内容.md",
+    "draft/Learning from concepts.md",
     "Pasted image 20260321235523.png",
     "Pasted image 20260321235342.png",
     "Pasted image 20260321234933.png",
@@ -204,9 +205,6 @@
     "Pasted image 20260321224550.png",
     "Pasted image 20260321224507.png",
     "Pasted image 20260321224418.png",
-    "Pasted image 20260321223308.png",
-    "draft/解构手机内容.md",
-    "draft/Learning from concepts.md",
     "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
     "基础理论/LLM/Ch2 Tokens And Embeddings.md",
     "基础理论/LLM/Ch1 An Introduction to Large Language Models.md",
