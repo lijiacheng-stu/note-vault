@@ -1,14 +1,21 @@
 ## The curse of Dimensionality
-讲的是降维的必要性：
- high-dimensional datasets are often very sparse：
-- -->most training instances are likely to be far away from each other, so training methods based on distance or similarity (such as _k_-nearest neighbors) will be much less effective.
-- --> some types of models will not be usable at all because they scale poorly with the dataset’s dimensionality (e.g., SVMs or dense neural networks).
-- -->new instances will likely be far away from any training instance, making predictions much less reliable
--  -->patterns in the data will become harder to identify, models will tend to fit the noise more frequently than in lower dimensions;
-- -->models will become even harder to interpret.
-解决方案：
-增加训练集的数量，但是：With just 100 features—significantly fewer than in the MNIST problem—all ranging from 0 to 1, you would need more training instances than atoms in the observable universe in order for training instances to be within 0.1 of each other on average, assuming they were spread out uniformly across all dimensions.
+1. curse of dimensionality：Many machine learning problems involve thousands or even millions of features for each training instance. Not only do all these features make training extremely slow, but they can also make it much harder to find a good solution
 
+2. 讲的是降维的必要性，以及维度灾难的原因：
+- some types of models will not be usable at all because they scale poorly with the dataset’s dimensionality (e.g., SVMs or dense neural networks).
+	- 复杂度随着n增长得很快的意思
+ - high-dimensional datasets are often very sparse：
+	-  -->patterns in the data will become harder to identify, models will tend to fit the noise more frequently than in lower dimensions;
+		- most training instances are likely to be far away from each other, so training methods based on distance or similarity (such as _k_-nearest neighbors) will be much less effective.
+			- 距离近也不一定真的近，用距离度量的区分度下降
+		- new instances will likely be far away from any training instance, making predictions much less reliable
+	- -->models will become even harder to interpret.
+解决方案：
+- 增加训练集的数量，但是不可行：With just 100 features—significantly fewer than in the MNIST problem—all ranging from 0 to 1, you would need more training instances than atoms in the observable universe in order for training instances to be within 0.1 of each other on average, assuming they were spread out uniformly across all dimensions.
+- 降低维度：
+	- speeding up training
+	- possibly improving your model’s performance
+	- extremely useful for data visualization
 ## PCA
 魔鬼细节：
 - 在数学中，有独立意义的向量，以列向量方式存储在矩阵中
@@ -54,8 +61,16 @@ sigular value decomposition: $X = U\Sigma V^T$
 - 可以Incremental PCA
 
 ## Random Project
+理论基础：
+- the random projection algorithm projects the data to a lower-dimensional space using a random linear projection.This may sound crazy, but it turns out that such a random projection is actually very likely to preserve distances fairly well.
+	- two similar instances will remain similar after the projection, and two very different instances will remain very different.
+算法：
+- 确定需要投影的维度d，算法是$d ≥ 4 log(m) / (\frac{1}{2}\epsilon^2-\frac{1}{3}\epsilon^3)$,当然也可以自己指定
+- 随机初始化P矩阵，矩阵`d*n`,表征d个实例空间中的主成分向量。初始化要求均值为0，方差1/d的正太分布（GaussianRandomProject）
+	- 若是SparseRandomProject，对于P中每一个cell有r （density，矩阵非零的占比）概率非零，若非零选择–_v_ or +_v_ (both equally likely), where _v_ = $v = 1/\sqrt(dr)$,不服从正态，但是保证了均值和方差
+- X @ P.T  
 
-
-
-思想总结
+## LLE
+- manifold learning
+- distances between instances are locally well preserved. However, distances are not preserved on a larger scale
 
