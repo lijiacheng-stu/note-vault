@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/解构手机内容.md",
+                "file": "基础理论/ML/Ch08 Unsupervised Learning Techniques.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "解构手机内容"
+              "title": "Ch08 Unsupervised Learning Techniques"
             }
           }
         ],
@@ -208,6 +208,7 @@
   },
   "active": "65b0fa1dd8b25aa0",
   "lastOpenFiles": [
+    "draft/解构手机内容.md",
     "基础理论/ML/Ch08 Unsupervised Learning Techniques.md",
     "基础理论/ML/Ch07 Dimensionality Reduction.md",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
@@ -216,7 +217,6 @@
     "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
     "draft/未命名.md",
     "draft/Learning from concepts.md",
-    "draft/解构手机内容.md",
     "Pasted image 20260321235523.png",
     "Pasted image 20260321235342.png",
     "Pasted image 20260321234933.png",
