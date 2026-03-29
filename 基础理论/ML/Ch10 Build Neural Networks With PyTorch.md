@@ -126,3 +126,15 @@ L=−c=1∑C​yc​log(y^​c​)
 		- 方法一：y_pred, y_train得到验证指标值1， 用X_valid跑一次模型，得到y_valid_pred结合y_valid得到验证指标值2，以体现是否存在过拟合。
 		- 方法二：只跑X_valid得验证指标值，判断是否需要早停，跟踪模型性能变化。
 - 用X_test测试训练模型的泛化能力。
+
+import torchmetrics
+
+def evaluate_tm(model, data_loader, metric):
+    model.eval()
+    metric.reset()  # reset the metric at the beginning
+    with torch.no_grad():
+        for X_batch, y_batch in data_loader:
+            X_batch, y_batch = X_batch.to(device), y_batch.to(device)
+            y_pred = model(X_batch)
+            metric.update(y_pred, y_batch)  # update it at each iteration
+    return metric.compute()  # compute the final result at the end
