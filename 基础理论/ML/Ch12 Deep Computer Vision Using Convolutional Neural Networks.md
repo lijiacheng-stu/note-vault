@@ -15,3 +15,8 @@
 	- 0～255 int 或 0～1 float
 	- 若是float，超过1 的部分被截断
 - torch.permute(), 用于转换axis
+
+
+
+- 对于反向传播的理解需要加强
+- 
