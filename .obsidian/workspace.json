@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "33e270449ae31ad3",
+        "id": "c46d43e37a274db4",
         "type": "tabs",
         "children": [
           {
-            "id": "69e1074cdf47bd95",
+            "id": "cf426f4d4002ac8f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "基础理论/ML/Ch07 Dimensionality Reduction.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Ch07 Dimensionality Reduction"
+              "title": "新标签页"
             }
           }
         ]
@@ -191,13 +187,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "69e1074cdf47bd95",
+  "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
+    "基础理论/ML/Ch07 Dimensionality Reduction.md",
     "基础理论/ML/Ch08 Unsupervised Learning Techniques.md",
     "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
     "基础理论/ML/未命名.md",
     "draft/解构手机内容.md",
-    "基础理论/ML/Ch07 Dimensionality Reduction.md",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
     "基础理论/ML/英语1.md",
     "基础理论/ML/Autodiff.md",
