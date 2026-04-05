@@ -1,4 +1,4 @@
-## 单词
+.## 单词
 - at scale 大规模地；在较大规模上；
 2. 专业
 	- in-place operation 原地操作
