@@ -73,4 +73,24 @@ f3 = f2_detached + x1
 	- When training a neural network, the goal is to make it model a target function _h_(**x**). If you add the input **x** to the output of the network (i.e., you add a skip connection), then the network will be forced to model _f_(**x**) = _h_(**x**) – **x** rather than _h_(**x**). This is called _residual learning_
 	- If the target function is fairly close to the identity function (which is often the case), this will speed up training considerably.
 	- if you add many skip connections, the network can start making progress even if several layers have not started learning yet (see [Figure 12-17](https://learning.oreilly.com/library/view/hands-on-machine-learning/9798341607972/ch12.html#deep_residual_network_diagram)). Thanks to skip connections, the signal can easily make its way across the whole network. The deep residual network can be seen as a stack of _residual units_ (RUs), where each residual unit is a small neural network with a skip connection.
+### xception
+- Depthwise separable convolutional layer
+- Separable convolutional layers use fewer parameters, less memory, and fewer computations than regular convolutional layers
+	- the numbers of parameters in **regular convolutional layer**  and **separable convolutional layer**，with the same in_channels, out_channels, kernel_size:
+		- for regular convolutional layer: `in_channels * kernel_size * kernel_size * out_channels + out_channels`
+		- for separabel convolutional layer: `in_channels * kernel_size * kernel_size + in_channels + in_channels * out_channels + out_channels`
+		- regular convolutional layer - separabel convolutional layer = `in_channels * kernel_size * kernel_size * (out_channels - 1) - in_channels - in_channels * out_channels`
+- note that `in_channels` and `out_channels` need to be divisible by `groups`
+	- `in_channels` 要能均分成groups组，因此需要被整除
+	- 当`groups = 1`时，为normal convolutional layer，此时，每个group对应out_channels个filters
+		- 合理推断：当`groups = k`时，由于`out_channels` 个feature maps，因此只能有`out_channels` 个卷积核，每一组均等，因此，每一组应该是out_channels / k个卷积核。因此，out_channels要能被k整除。
+	- 特殊地，`groups = in_channels, out_channels = in_channels`时, 每组一个channels，每组一个kernel，从而形成depthwise convolutional layer
+- depthwise max pooling 和 depthwise convolutional layer 和 depthwise concatenation和Pointwise convolution
+	- depthwise max pooling中，depthwise指的是沿着channel这个dim，进行max pooling操作
+	- depthwise convolutional layer中，depthwise指的是每一层为一个单位，分别进行卷积操作
+	- depthwise concatenation中，不同的input，在channel这个dim进行拼接
+	- Pointwise convolution，pointwise指的是kernel的size是`1*1`的。
+	- 疑问： depthwise max pooling 的语义和Pointwise convolution很接近
+### SENet
+- ILSVRC 2017 challenge，2.25%
 - 
