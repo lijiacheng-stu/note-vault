@@ -93,4 +93,29 @@ f3 = f2_detached + x1
 	- 疑问： depthwise max pooling 的语义和Pointwise convolution很接近
 ### SENet
 - ILSVRC 2017 challenge，2.25%
-- 
+
+
+## GPU RAM Requirements: Inference Versus Training
+1. 要描述一个卷积层，至少需要5个参数：
+	- the number of feature maps (out_channels)
+	- kernel size
+	- stride
+	- padding
+	- the number of channels of previous layer(in_channels) 
+2. a single convolutional layer with 200 5 × 5 filters, stride 1 and `"same"` padding, processing a 150 × 100 RGB image (3 channels):
+	- 参数的数量 `(5 * 5 * 3 + 1) * 200 = 15,200`,即59kB
+	- 输出一次feature map需要进行的浮点数乘法计算：`(5 * 5 * 3) * 150 * 100 * 200 = 225 million`
+	- 输出的feature map所占据的空间：`4 * 150 * 100 * 200 = 11.4MB`
+	- 若是100个instance一起处理，则为1GB左右
+3. 推理过程：
+	- 所有的参数
+	- 存储连续的两层的feature map
+4. 训练过程：
+	- 所有的参数
+	- 所有层计算出的feature map （用于反向传播）
+5. 结论：
+	- 训练阶段比推理阶段需要更多的内存
+		- 训练阶段会使用batch，包含多张图片，推理阶段可以少量的几张
+		- 训练阶段的所有中间结果feature map都要存储
+	- 在推理阶段处理一张图片需要的内存是两个feature map的所需容量
+
