@@ -119,3 +119,34 @@ f3 = f2_detached + x1
 		- 训练阶段的所有中间结果feature map都要存储
 	- 在推理阶段处理一张图片需要的内存是两个feature map的所需容量
 
+
+## Implementing RU
+- 在构造器中写出各个模块
+	- skip connection
+	- main layers
+- 在forward中，把各个模块串联起来
+
+
+困难点1: nn.BatchNorm1d还是nn.BatchNorm2d?
+困难点2: nn.Conv2d? 
+困难点3: 对相同的img做这两个卷积操作，128, 1 * 1 + 2(S) 和128， 3 * 3 + 2（s）特征图的维度H，W一定会相同？
+
+
+ans1:
+- BatchNorm = batch normalization 批归一化
+- 公式的第一步用的是标准化, 却用的是norm，归一化
+	- $$y = \frac{x - \mathrm{E}[x]}{\sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma + \beta$$
+- 对C这个维度做计算均值和方差，并逐元素归一化
+	- 1d：空间维度是1，单个instance的指定c后的索引结果是1d的，所以输入的形状是(N, C, L), 计算C次归一化，每次统计的均值和方差是`input[:,c,:]`索引得到的元素。特殊地，当L=1时，输入的形状变为(N,C)
+	- 2d：空间维度是2，单个instance的指定c后的索引结果是2d的，索引输入形状(N, C, H, W), 计算C次归一化，每一次统计的均值和方差是`input[:,c,:,:]`索引所得到的元素。
+- 输入和输出形状相同
+
+ans2：
+- Applies a 2D convolution over an input signal composed of several input。
+	- 2D convolution：在二维输入平面上，用一个较小的二维核（kernel）滑动，对每个局部区域做加权求和，得到输出特征图。
+	- 2D指的是卷积核滑动的维度
+
+ans3:
+- $H_{out}$ , `height of output`跟$H_{in}, P, S, K$,`, height of input,padding,stride, kernel_size` 有关公式是：
+![[Pasted image 20260407215804.png]]
+- 因此可以得到skip_connection的p=0
