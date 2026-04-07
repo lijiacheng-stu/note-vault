@@ -127,6 +127,14 @@ f3 = f2_detached + x1
 - 在forward中，把各个模块串联起来
 
 
+
+### 细节
+- 继承nn.Module, 构造器中使用`super().__init__()`
+- 所有的covolutional layer中的神经元的bias = 0, 因为后面紧跟着BN，BN中可学习的beta就相当于时bias了
+- inputs来表达输入，而不是input，因为input是哪只函数名
+- 在forward中，需要对result1 + result2的结果进行relu，这里不需要先用nn.Relu()(result1 + result2)。因为relu是一个逐元素操作，直接使用函数就行，torch.nn.functional.relu。
+- 使得输出和输出不匹配的原因，不仅仅是stride使得H，W不匹配，还有可能是in_channels,和out_channels不同。且stride>1时往往伴随着out_channels加倍，因此，if stride > 1 or out_channels != in_channels:
+### 困难
 困难点1: nn.BatchNorm1d还是nn.BatchNorm2d?
 困难点2: nn.Conv2d? 
 困难点3: 对相同的img做这两个卷积操作，128, 1 * 1 + 2(S) 和128， 3 * 3 + 2（s）特征图的维度H，W一定会相同？
@@ -150,3 +158,4 @@ ans3:
 - $H_{out}$ , `height of output`跟$H_{in}, P, S, K$,`, height of input,padding,stride, kernel_size` 有关公式是：
 ![[Pasted image 20260407215804.png]]
 - 因此可以得到skip_connection的p=0
+
