@@ -120,28 +120,23 @@ f3 = f2_detached + x1
 	- 在推理阶段处理一张图片需要的内存是两个feature map的所需容量
 
 
-## Implementing RU
+## Implementing RU and ResNet34
+### 1.总体思路
 - 在构造器中写出各个模块
 	- skip connection
 	- main layers
 - 在forward中，把各个模块串联起来
-
-
-
-### 细节
+### 2. 魔鬼细节
 - 继承nn.Module, 构造器中使用`super().__init__()`
 - 所有的covolutional layer中的神经元的bias = 0, 因为后面紧跟着BN，BN中可学习的beta就相当于时bias了
 - inputs来表达输入，而不是input，因为input是哪只函数名
 - 在forward中，需要对result1 + result2的结果进行relu，这里不需要先用nn.Relu()(result1 + result2)。因为relu是一个逐元素操作，直接使用函数就行，torch.nn.functional.relu。
 - 使得输出和输出不匹配的原因，不仅仅是stride使得H，W不匹配，还有可能是in_channels,和out_channels不同。且stride>1时往往伴随着out_channels加倍，因此，if stride > 1 or out_channels != in_channels:
 - 对于ResNet34中，34指的是卷积层和全连接层的数量，第一个convolutional layer的padding = 3
-- 
-
-### 困难
-困难点1: nn.BatchNorm1d还是nn.BatchNorm2d?
-困难点2: nn.Conv2d? 
+### 3.遇到的困难
+困难点1: nn.BatchNorm1d还是nn.BatchNorm2d，有什么区别？
+困难点2: nn.Conv2d还是nn.Cov3d, 有什么区别? 
 困难点3: 对相同的img做这两个卷积操作，128, 1 * 1 + 2(S) 和128， 3 * 3 + 2（s）特征图的维度H，W一定会相同？
-
 
 ans1:
 - BatchNorm = batch normalization 批归一化
@@ -162,3 +157,34 @@ ans3:
 ![[Pasted image 20260407215804.png]]
 - 因此可以得到skip_connection的p=0
 
+## 使用预训练模型
+来源：
+- TorchVision
+- TIMM
+- Hugging Face
+
+形容模型大小的词：
+- tiny
+- small
+- base
+- large
+
+基本的问题：
+- 探究
+	- 下载的参数缓存在了哪儿里？
+		- torch.hub.get_dir()
+	- 能下载哪儿些模型？
+		- torchvision.models.list_models()
+	- 这些模型有哪儿些可选的参数？
+		- tochvision.models.get_model_weights('model_name')
+		- 返回这个模型能够使用的参数名称的枚举容器，容器中包含了这个模型可能的针对其他数据集的多个权重版本名称。注意不是权重本身，权重本身只有在创建模型实例的时候才下载。
+	- 这些模型有哪儿些功能？
+		- 用jupyter lab中的`?` ，或者的`__doc__`查看`torchvision.models.model_name`
+- 创建实例，并为实例传入预训练参数
+	- 获取参数版本：“枚举容器 + 具体版本” 
+		- get_model_weight()获得枚举容器，再指定具体版本
+		- torchvion.model中获取枚举容器，再指定具体版本
+	- 用torchvision.models.list_models()返回的模型名，一定存在相应的创建该模型实例的函数torchvision.models.model_name(),这个函数可以自动进行如下操作：
+		- 下载权重(option)
+		- 创建模型实例
+		- 把权重载入模型实例等(option)
