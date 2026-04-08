@@ -170,23 +170,54 @@ ans3:
 - large
 
 基本的问题：
-- 探究
+- 探究基本问题：
+	- 能下载哪儿些模型？
+		- torchvision.models.list_models() --> list of 'model_name'
+	- 这些模型有哪儿些可选的参数？
+		- tochvision.models.get_model_weights('model_name') --> 返回这个模型能够使用的参数名称的枚举容器，容器中包含了这个模型可能的针对其他数据集或训练方法的多个权重版本。
+		- 容器中特定的权重版本，暂且标记为weights：
+			- weights不包含具体的权重，但是有权重所在的地址。具体看`weights中有什么？`
 	- 下载的参数缓存在了哪儿里？
 		- torch.hub.get_dir()
-	- 能下载哪儿些模型？
-		- torchvision.models.list_models()
-	- 这些模型有哪儿些可选的参数？
-		- tochvision.models.get_model_weights('model_name')
-		- 返回这个模型能够使用的参数名称的枚举容器，容器中包含了这个模型可能的针对其他数据集的多个权重版本名称。注意不是权重本身，权重本身只有在创建模型实例的时候才下载。
 	- 这些模型有哪儿些功能？
 		- 用jupyter lab中的`?` ，或者的`__doc__`查看`torchvision.models.model_name`
-- 创建实例，并为实例传入预训练参数
-	- 获取参数版本：“枚举容器 + 具体版本” 
-		- get_model_weight()获得枚举容器，再指定具体版本
-		- torchvion.model中获取枚举容器，再指定具体版本
-	- 用torchvision.models.list_models()返回的模型名，一定存在相应的创建该模型实例的函数torchvision.models.model_name(),这个函数可以自动进行如下操作：
-		- 下载权重(option)
-		- 创建模型实例
-		- 把权重载入模型实例等(option)
-- 怎么使用实例呢？
-	- 对数据进行预处理
+	- 创建实例，并为实例传入预训练参数
+		- 获取参数版本：“枚举容器 + 具体版本” 
+			- get_model_weight()获得枚举容器，再指定具体版本
+			- torchvion.model也存储了参数的枚举容器，可通过get_model_weight()知晓名称，再指定具体版本
+		- 用torchvision.models.list_models()返回的模型名，一定存在相应的创建该模型实例的函数torchvision.models.model_name(),这个函数可以内部自动进行如下操作：
+			- 下载权重(option)，依赖weight的url属性
+			- 创建模型实例
+			- 把权重载入模型实例等(option)
+- weights中有什么？
+	- value
+		- url, 模型的参数的位置 --> get_state_dict方法依赖此属性--> 用于得到模型的参数，然后传给实例
+		- transforms, 预处理函数对象 --> transforms方法依赖此属性--> 用于预处理 --> 包装成方法的可能原因是防止可能不需要的对象占用内存，动态地生产对象
+		- meta，模型的描述 --> meta属性依赖此属性
+			- 'num_params'，参数数量
+			- `_file_size`,path的文件大小
+			- `'_metrics'`，预测能力
+			- `recipe`，训练方法
+	- 所谓的其他方法都依赖于value的值，这也体现了Enum的设计哲学
+基础知识：关于Enum
+- 在weights中的结构
+```python
+from enum import Enum
+class WeightEnum(Enum):
+	WEIGHT_V1 = value1
+	WEIGHT_V2 = value2
+	WEIGHT_V3 = value3
+	
+	def __init__(self):
+		self.curl = self.value.curl
+		self.meta= self.value.meta
+	
+	def get_state_dict(self):
+		```依赖value中的curl，包括从网上下载权重到本地cache，封装成一个字典```
+	
+	def transforms(self):
+		```依赖value中的transforms，调用value点transforms()```
+```
+所以，当使用`WeightEnum.WEIGHT_V1`时，天然地有'get_state_dict','meta', 'name', 'transforms','url','value'
+- 对enum对象，应该知道至少有name，value属性，还可能有其他依赖于value的属性和方法。
+- 方法和属性都能返回对象，属性是静态的，方法是动态的，省内存。
