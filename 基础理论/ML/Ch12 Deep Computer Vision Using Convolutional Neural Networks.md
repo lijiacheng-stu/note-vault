@@ -221,3 +221,16 @@ class WeightEnum(Enum):
 所以，当使用`WeightEnum.WEIGHT_V1`时，天然地有'get_state_dict','meta', 'name', 'transforms','url','value'
 - 对enum对象，应该知道至少有name，value属性，还可能有其他依赖于value的属性和方法。
 - 方法和属性都能返回对象，属性是静态的，方法是动态的，省内存。
+
+## Pretrained Models for Transfer Learning
+### 基本的问题
+- 怎样替换已经创建的模型实例的部分模块？
+- 怎么冻结模型的参数？
+- 怎么先冻结一部分，在逐渐地解封？
+
+
+更基本：
+- 如何解构模型和他的参数？
+- 如何构建数据加载器？分离所谓的feature和target
+- 如何用pytorch的optimizer ，schedule等等训练模型？
+- 如何逐渐解冻一部分？

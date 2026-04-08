@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/重要方法.md",
+                "file": "基础理论/ML/Ch12 Deep Computer Vision Using Convolutional Neural Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "重要方法"
+              "title": "Ch12 Deep Computer Vision Using Convolutional Neural Networks"
             }
           }
         ]
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "基础理论/ML/重要方法.md",
+                "file": "基础理论/ML/Ch12 Deep Computer Vision Using Convolutional Neural Networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "重要方法 的反向链接列表"
+              "title": "Ch12 Deep Computer Vision Using Convolutional Neural Networks 的反向链接列表"
             }
           },
           {
@@ -193,6 +193,7 @@
   },
   "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
+    "基础理论/ML/重要方法.md",
     "基础理论/ML/Ch12 Deep Computer Vision Using Convolutional Neural Networks.md",
     "基础理论/ML/基础概念.md",
     "基础理论/ML/ch2 End-to-End Machine Learning Project.md",
@@ -227,7 +228,6 @@
     "学习日记/2026年3月14日.md",
     "学习日记",
     "基础理论/LLM/appendix A Introduction to PyToch.md",
-    "基础理论/ML/重要方法.md",
     "基础理论/ML/综合.md",
     "基础理论/ML/ch3 Classification.md",
     "基础理论/ML/ch1 the machine learning landscape.md",
