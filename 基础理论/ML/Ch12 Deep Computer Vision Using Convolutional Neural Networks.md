@@ -232,14 +232,19 @@ class WeightEnum(Enum):
 更基本：
 - 如何解构模型和他的参数？
 	- 模型有两种构成类型, 一种是由子模块构成的模型，另一种是由参数构成的模型。他们都是离散地定义在构造器中。在forward函数中，将他们串联起来，形成一个有机的结构，从而实现反向传播调整参数，已经前向传播做出预测。
+	- 只有nn.Parameter类型，和nn.Module类型的属性，才能model.to(device)是被传到对应的芯片, 被parameter(),children()方法找到
 	- 构造器中，`self.xx`,形成模型的属性，这些属性中有两个是特别的属性，一个是Parameter类型，一个是Module类型。
 	- 对于model.parameters()/named_parameters()返回一个iterator对象：
 		- 找到Parameter类型的属性，放进去
 		- 找到Module类型的属性，对这个model执行parameters()，递归。
 			- 检索路径就会是named_parameters()中的名字
+		- 名称就是属性名，值就是参数
 	- 对于model.children()/model.named_children()返回一个iterator对象：
 		- 找到Module类型的属性，放进去，非递归。
+		- 名称就是属性，值就是模块。
 	- model.parameters()的iterator对象，和模型内部的有什么关联？
+		- 内容物，指向的参数和模块都是model中同一个，可以实现inplace操作，无法实现对model的替换。
 - 如何构建数据加载器？分离所谓的feature和target
+	- 
 - 如何用pytorch的optimizer ，schedule等等训练模型？
 - 如何逐渐解冻一部分？
