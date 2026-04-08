@@ -134,6 +134,9 @@ f3 = f2_detached + x1
 - inputs来表达输入，而不是input，因为input是哪只函数名
 - 在forward中，需要对result1 + result2的结果进行relu，这里不需要先用nn.Relu()(result1 + result2)。因为relu是一个逐元素操作，直接使用函数就行，torch.nn.functional.relu。
 - 使得输出和输出不匹配的原因，不仅仅是stride使得H，W不匹配，还有可能是in_channels,和out_channels不同。且stride>1时往往伴随着out_channels加倍，因此，if stride > 1 or out_channels != in_channels:
+- 对于ResNet34中，34指的是卷积层和全连接层的数量，第一个convolutional layer的padding = 3
+- 
+
 ### 困难
 困难点1: nn.BatchNorm1d还是nn.BatchNorm2d?
 困难点2: nn.Conv2d? 
