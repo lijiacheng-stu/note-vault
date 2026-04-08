@@ -231,6 +231,8 @@ class WeightEnum(Enum):
 
 更基本：
 - 如何解构模型和他的参数？
+	- 构成模型的模块，在构造器中定义，在forward中串联。
+	- 构造器中定义
 - 如何构建数据加载器？分离所谓的feature和target
 - 如何用pytorch的optimizer ，schedule等等训练模型？
 - 如何逐渐解冻一部分？
