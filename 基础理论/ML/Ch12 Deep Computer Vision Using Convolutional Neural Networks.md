@@ -250,3 +250,13 @@ class WeightEnum(Enum):
 	- DataLoader：按照sampler提供的索引顺序，按照batch_size的尺度，提供数据
 - 如何用pytorch的optimizer ，schedule等等训练模型？
 - 如何逐渐解冻一部分？
+
+四类评价指标：
+- during each epoch, use batch in training set:
+	- 记录每个batch的loss，最后加和 / m，得到平均loss，判断模型的波动情况
+- at end of each epoch, use training set and validation set：
+	- 用训练集和验证集测试性能，判断是否过拟合。
+- at end of training using training set, use validation set：
+	- 用验证集测试性能，用于评估当前训练的模型的性能，选超参数和模型。
+- end of training using training set + validation set, use test set to measure the ability of model:
+	- 用测试集，评估模型性能和泛化能力
