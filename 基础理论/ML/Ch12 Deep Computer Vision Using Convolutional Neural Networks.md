@@ -245,6 +245,8 @@ class WeightEnum(Enum):
 	- model.parameters()的iterator对象，和模型内部的有什么关联？
 		- 内容物，指向的参数和模块都是model中同一个，可以实现inplace操作，无法实现对model的替换。
 - 如何构建数据加载器？分离所谓的feature和target
-	- 
+	- Dataset实现了__getitem__()和__len__()方法，其中`ds[i]`,返回结果是一个元组，第一个是X，第二个是y。（当然也可以是三元组）
+	- Sampler依赖data，返回可迭代对象，里面是针对data和sampler策略的索引
+	- DataLoader：按照sampler提供的索引顺序，按照batch_size的尺度，提供数据
 - 如何用pytorch的optimizer ，schedule等等训练模型？
 - 如何逐渐解冻一部分？
