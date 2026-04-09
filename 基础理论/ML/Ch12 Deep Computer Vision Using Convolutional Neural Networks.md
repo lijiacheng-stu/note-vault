@@ -241,9 +241,10 @@ class WeightEnum(Enum):
 		- 名称就是属性名，值就是参数
 	- 对于model.children()/model.named_children()返回一个iterator对象：
 		- 找到Module类型的属性，放进去，非递归。
-		- 名称就是属性，值就是模块。
+		- 名称就是属性名，值就是模块。属性名可以用model.attribute来获得值。
 	- model.parameters()的iterator对象，和模型内部的有什么关联？
 		- 内容物，指向的参数和模块都是model中同一个，可以实现inplace操作，无法实现对model的替换。
+		- 
 - 如何构建数据加载器？分离所谓的feature和target
 	- Dataset实现了__getitem__()和__len__()方法，其中`ds[i]`,返回结果是一个元组，第一个是X，第二个是y。（当然也可以是三元组）
 	- Sampler依赖data，返回可迭代对象，里面是针对data和sampler策略的索引
