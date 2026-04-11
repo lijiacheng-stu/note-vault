@@ -4,3 +4,5 @@
 ## Introducing the transformer architecture
 - BERT 及其变体专注于 **掩码词预测** 任务。
 - GPT, generative pre-trained transformer 专注于生成式任务
+- Autoregressive models incorporate their previous outputs as inputs for future predictions.
+- 
