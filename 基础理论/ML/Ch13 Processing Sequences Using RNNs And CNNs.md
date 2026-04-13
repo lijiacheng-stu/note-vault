@@ -14,4 +14,6 @@
 -  memory cell = recurrent neuron
 - 每次输出一个time step的input，以及上一个状态
 - 完成一个样本需要执行window length次
-- 
+
+
+rail, bus, one_hot_W, one_hot_A, one_hot_U
