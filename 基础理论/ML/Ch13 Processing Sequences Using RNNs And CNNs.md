@@ -17,3 +17,10 @@
 
 
 rail, bus, one_hot_W, one_hot_A, one_hot_U
+
+
+输入的是什么？
+a sequence, shape = (window_length, dimension)
+输出的是什么？
+the hiddent status of every rnn neutrons and out
+
