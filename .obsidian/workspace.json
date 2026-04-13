@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/文献阅读4月12日.md",
+                "file": "基础理论/ML/重要方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文献阅读4月12日"
+              "title": "重要方法"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5,
-    "collapsed": true
+    "width": 322.5
   },
   "right": {
     "id": "2f4f775a6d30f43d",
@@ -194,6 +193,13 @@
   },
   "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
+    "基础理论/ML/基础概念.md",
+    "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
+    "基础理论/DeepLearning/英语.md",
+    "基础理论/DeepLearning/语素.md",
+    "基础理论/DeepLearning/part_I/记号.md",
+    "基础理论/DeepLearning/part_I/线性代数.md",
+    "draft/文献阅读4月12日.md",
     "Pasted image 20260412001407.png",
     "Pasted image 20260411232855.png",
     "Pasted image 20260411224606.png",
@@ -203,11 +209,9 @@
     "Pasted image 20260411170455.png",
     "Pasted image 20260411170435.png",
     "基础理论/Build a LLM/Ch1_Understanding_Large_Language_Models.md",
-    "draft/文献阅读4月12日.md",
     "draft/Learning from concepts.md",
     "基础理论/Build a LLM",
     "draft/文献阅读3月8日.md",
-    "基础理论/ML/基础概念.md",
     "基础理论/ML/重要方法.md",
     "基础理论/ML/Ch12 Deep Computer Vision Using Convolutional Neural Networks.md",
     "基础理论/ML/ch2 End-to-End Machine Learning Project.md",
@@ -222,16 +226,11 @@
     "基础理论/ML/Ch10 Build Neural Networks With PyTorch.md",
     "基础理论/ML/Ch08 Unsupervised Learning Techniques.md",
     "基础理论/ML/Ch9  Introduction to Artificial Neural Networks.md",
-    "Pasted image 20260405124221.png",
     "基础理论/ML/Ch07 Dimensionality Reduction.md",
     "基础理论/ML/未命名.md",
     "draft/解构手机内容.md",
     "基础理论/ML/英语1.md",
     "draft/未命名.md",
-    "基础理论/LLM/Ch2 Tokens And Embeddings.md",
-    "基础理论/LLM/Ch1 An Introduction to Large Language Models.md",
-    "基础理论/PS/01 Getting To Know The Work Area.md",
-    "学习日记/2026年3月14日.md",
     "学习日记",
     "基础理论/PS",
     "考试/时空数据挖掘",
