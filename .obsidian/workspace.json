@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
+                "file": "基础理论/ML/重要方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch13 Processing Sequences Using RNNs And CNNs"
+              "title": "重要方法"
             }
           }
         ]
@@ -193,9 +193,9 @@
   },
   "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
-    "基础理论/ML/重要方法.md",
     "基础理论/ML/基础概念.md",
     "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
+    "基础理论/ML/重要方法.md",
     "基础理论/DeepLearning/英语.md",
     "基础理论/DeepLearning/语素.md",
     "基础理论/DeepLearning/part_I/记号.md",
