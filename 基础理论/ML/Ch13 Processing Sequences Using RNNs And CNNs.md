@@ -1,3 +1,4 @@
+## 术语：
 - _autocorrelated_:
 	- When a time series is correlated with a lagged version of itself, we say that the time series is _autocorrelated_.
 - weekly _seasonality_:
@@ -8,4 +9,9 @@
 - _mean absolute percentage error_ (MAPE):
 	- 区别：mean absolute error (MAE)
 	- `(diff_7 / targets).abs().mean()`
+
+## 对RNN中的memory cell的理解的理解
+-  memory cell = recurrent neuron
+- 每次输出一个time step的input，以及上一个状态
+- 完成一个样本需要执行window length次
 - 
