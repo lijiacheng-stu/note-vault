@@ -15,6 +15,7 @@
 - 手搓GRU cell
 	- 图纸-->子模块名称
 - 把cell组织起来，成为一个RNN层
+	- 
 
 - 获取hand-one machine learning中关于本章的样例数据
 - 复现本章
@@ -29,3 +30,19 @@
 - number of layers --> num_layers
 
 - batch_first
+
+### 2. 对memory cell的认识
+- 输入：前一个time step的state， 当前这个time step的x
+- 输出：当前这个time step的state，且隐含了这个time step的y_pred，注意，y_pred不一定得和state相等。
+	- 对于Basic，y_pred = state
+	- 对于GRU， y_pred = state
+	- 对于LSTM，存在两个state, 且y_pred = 是state_h，不是state_c
+
+### 3.对RNN的理解
+- 输入：(window length，input size)
+- 操作：对RNN分window length次，向RNN的memory cell输入input size的向量，期间memory cell将产生window length个输出向量y，以及最后一个cell的状态h
+- RNN的输出的处理：
+	- vector to sequence
+	- sequence to vector
+	- sequence to sequence
+	- encoder-decoder
