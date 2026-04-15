@@ -10,6 +10,7 @@
 answer2：RNN，LSTM，GRU的建立都是基于其对应的memory cell的。对于一个memory cell，无论是LSTM cell，GRU cell还是RNN cell，每一次处理的都是vector， 这个vector是代表一个实例的window length个vectors之一，是在该实例time step = t时候的输入。那么在PyTorch api中，就会让cell处理batch个相同的vector，即(batch size, dimensionality)。那么(batch size, dimensionality)输入进去让这个memory cell处理，得到的不就是time step = t这个点对整个batch输入memory cell之后的输出和状态了嘛。所以要利用这种api接口，只能把window length 这个轴放到前面去。
 - 打破一种固有认知，认为batch维度就必须在第一个维度。可能存在某个操作是前面都相同的情况下，每个batch的相同部分进行操作。
 
+输入(batch size, sequence length, input size)
 
 ## task：
 - 手搓basic cell
