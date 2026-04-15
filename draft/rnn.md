@@ -1,11 +1,16 @@
 ## 问题：
-- 继承nn.Module之后，为什么一定要运行一遍`super().__init__()`
-- 为啥要的window length 提到batch size的前面？
+- question1：继承nn.Module之后，为什么一定要运行一遍`super().__init__()`
+- question2: 为啥要的window length 提到batch size的前面？
 	- 在我看来batch中的每一个都是能够并行执行的，因此，batch size在window length之前是很好的，并行能是能每次处理一个batch size大小的一个time step
 	- 当window length提到batch size之前，就不能并行执行了，执行串行执行，每次执行的batch size大小和之前一样尽管。
 	- 因此，好像没有什么意义把window length 提到batch size的前面
-- 训练的时候，我希望是滑动窗口的作为target，但是验证的时候，只希望保留最后一个。那么，时候存在model.train（）和model.valid（）
-- rnn中当前状态和当前的输出是不是一定得相等？对于LSTM好像h和y是相等的，gru也是，用Linear作为memory cell也是
+- question3: 训练的时候，我希望是滑动窗口的作为target，但是验证的时候，只希望保留最后一个。那么，时候存在model.train（）和model.valid（）
+- question4: rnn中当前状态和当前的输出是不是一定得相等？对于LSTM好像h和y是相等的，gru也是，用Linear作为memory cell也是
+## answer
+answer2：RNN，LSTM，GRU的建立都是基于其对应的memory cell的。对于一个memory cell，无论是LSTM cell，GRU cell还是RNN cell，每一次处理的都是vector， 这个vector是代表一个实例的window length个vectors之一，是在该实例time step = t时候的输入。那么在PyTorch api中，就会让cell处理batch个相同的vector，即(batch size, dimensionality)。那么(batch size, dimensionality)输入进去让这个memory cell处理，得到的不就是time step = t这个点对整个batch输入memory cell之后的输出和状态了嘛。所以要利用这种api接口，只能把window length 这个轴放到前面去。
+- 打破一种固有认知，认为batch维度就必须在第一个维度。可能存在某个操作是前面都相同的情况下，每个batch的相同部分进行操作。
+
+
 ## task：
 - 手搓basic cell
 - 手搓LSTM cell
