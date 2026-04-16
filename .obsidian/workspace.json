@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
+                "file": "基础理论/ML/Ch14 NLP With RNNs And Attention.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch13 Processing Sequences Using RNNs And CNNs"
+              "title": "Ch14 NLP With RNNs And Attention"
             }
           }
         ]
@@ -193,9 +193,10 @@
   },
   "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
+    "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
+    "基础理论/ML/Ch14 NLP With RNNs And Attention.md",
     "基础理论/ML/重要方法.md",
     "draft/rnn.md",
-    "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
     "基础理论/ML/基础概念.md",
     "基础理论/DeepLearning/英语.md",
     "基础理论/DeepLearning/语素.md",
@@ -230,7 +231,6 @@
     "基础理论/ML/Ch07 Dimensionality Reduction.md",
     "基础理论/ML/未命名.md",
     "draft/解构手机内容.md",
-    "基础理论/ML/英语1.md",
     "学习日记",
     "基础理论/PS",
     "考试/时空数据挖掘",
