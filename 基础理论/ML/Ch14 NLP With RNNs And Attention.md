@@ -24,4 +24,6 @@ tokenizier:
 
 
 
-
+指的是什么？
+BPE algorithm：分词和映射？还是生成vocab的？
+train the tokenizer
