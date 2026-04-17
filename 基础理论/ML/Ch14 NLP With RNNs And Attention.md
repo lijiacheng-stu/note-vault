@@ -1,6 +1,9 @@
 训练一个分词器都需要什么讯息：
 
 
+images are typically complex and contain a wide variety of objects, making it difficult to encode specific retrieval criteria in an image alone
+
+
 怎样构建这样的包？
 了解层级结构会让我们更容易记忆。
 
