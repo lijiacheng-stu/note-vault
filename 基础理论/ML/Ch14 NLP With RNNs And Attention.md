@@ -2,6 +2,11 @@
 
 
 images are typically complex and contain a wide variety of objects, making it difficult to encode specific retrieval criteria in an image alone
+specify complex visual information in text alone, as describing details of color patterns and the shapes of interest objects is often difficult and imprecise with text
+
+两只并排站立在枝条上的鹦鹉。
+
+Incorporating open-ended text as an additional search criterion allows the inclusion of diverse natural language concepts, modifiers, and search specifications with images to produce a flexible retrieval formulation.
 
 
 怎样构建这样的包？
