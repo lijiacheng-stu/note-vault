@@ -33,5 +33,7 @@ tokenizier:
 
 
 指的是什么？
-BPE algorithm：分词和映射？还是生成vocab的？
+BPE algorithm：分词和映射？还是生成vocab的？**BPE = Byte Pair Encoding**
 train the tokenizer
+
+pad 填充
