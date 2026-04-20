@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/Ch14 NLP With RNNs And Attention.md",
+                "file": "基础理论/ML/CH14.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch14 NLP With RNNs And Attention"
+              "title": "CH14"
             }
           }
         ]
@@ -193,6 +193,8 @@
   },
   "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
+    "基础理论/ML/Ch14 NLP With RNNs And Attention.md",
+    "基础理论/ML/CH14.md",
     "draft/核心点.md",
     "Pasted image 20260418151419.png",
     "draft/研究背景与意义.md",
@@ -204,7 +206,6 @@
     "draft/未命名",
     "draft/文献阅读4月12日.md",
     "基础理论/ML/ch1 the machine learning landscape.md",
-    "基础理论/ML/Ch14 NLP With RNNs And Attention.md",
     "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
     "基础理论/ML/重要方法.md",
     "基础理论/ML/基础概念.md",
