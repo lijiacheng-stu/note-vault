@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础理论/ML/CH14.md",
+                "file": "基础理论/ML/CH15.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CH14"
+              "title": "CH15"
             }
           }
         ]
@@ -193,12 +193,13 @@
   },
   "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
+    "基础理论/ML/CH14.md",
+    "基础理论/ML/CH15.md",
     "基础理论/ML/Ch14 NLP With RNNs And Attention.md",
     "draft/未命名 2.md",
     "draft/未命名.md",
     "draft/Learning from concepts.md",
     "draft/文献阅读 1月11日.md",
-    "基础理论/ML/CH14.md",
     "draft/核心点.md",
     "Pasted image 20260418151419.png",
     "draft/研究背景与意义.md",
@@ -229,7 +230,6 @@
     "基础理论/Build a LLM",
     "draft/文献阅读3月8日.md",
     "基础理论/ML/Ch12 Deep Computer Vision Using Convolutional Neural Networks.md",
-    "基础理论/ML/ch2 End-to-End Machine Learning Project.md",
     "Pasted image 20260407215804.png",
     "基础理论/LaTex",
     "学习日记",
