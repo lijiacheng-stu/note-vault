@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/文献阅读4月23日.md",
+                "file": "draft/文献阅读4月26日.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文献阅读4月23日"
+              "title": "文献阅读4月26日"
             }
           }
         ]
@@ -193,9 +193,11 @@
   },
   "active": "cf426f4d4002ac8f",
   "lastOpenFiles": [
+    "draft/文献阅读4月23日.md",
+    "draft/文献阅读4月26日.md",
+    "draft/文献SOP.md",
     "Pasted image 20260423222143.png",
     "draft/未命名 3.md",
-    "draft/文献阅读4月23日.md",
     "基础理论/ML/CH15.md",
     "基础理论/ML/CH14.md",
     "基础理论/ML/Ch14 NLP With RNNs And Attention.md",
@@ -220,7 +222,6 @@
     "基础理论/DeepLearning/英语.md",
     "基础理论/DeepLearning/语素.md",
     "基础理论/DeepLearning/part_I/记号.md",
-    "基础理论/DeepLearning/part_I/线性代数.md",
     "Pasted image 20260412001407.png",
     "Pasted image 20260411232855.png",
     "Pasted image 20260411224606.png",
@@ -230,7 +231,6 @@
     "Pasted image 20260411170455.png",
     "Pasted image 20260411170435.png",
     "基础理论/Build a LLM",
-    "Pasted image 20260407215804.png",
     "基础理论/LaTex",
     "学习日记",
     "基础理论/PS",
