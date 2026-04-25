@@ -11,6 +11,18 @@
             "id": "cf426f4d4002ac8f",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20260425133648.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260425133648"
+            }
+          },
+          {
+            "id": "2cd16278547f93d5",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "draft/文献阅读4月26日.md",
@@ -21,7 +33,8 @@
               "title": "文献阅读4月26日"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,12 +204,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cf426f4d4002ac8f",
+  "active": "2cd16278547f93d5",
   "lastOpenFiles": [
-    "draft/文献阅读4月23日.md",
-    "draft/文献阅读4月26日.md",
     "draft/文献SOP.md",
-    "Pasted image 20260423222143.png",
+    "Pasted image 20260425133648.png",
+    "Pasted image 20260425133635.png",
+    "draft/文献阅读4月26日.md",
+    "Pasted image 20260425163408.png",
+    "Pasted image 20260425163218.png",
+    "Pasted image 20260425162828.png",
+    "Pasted image 20260425162414.png",
+    "Pasted image 20260425161757.png",
+    "Pasted image 20260425161044.png",
+    "Pasted image 20260425161006.png",
+    "Pasted image 20260425155347.png",
+    "draft/文献阅读4月23日.md",
+    "draft/文献阅读4月12日.md",
     "draft/未命名 3.md",
     "基础理论/ML/CH15.md",
     "基础理论/ML/CH14.md",
@@ -206,7 +229,6 @@
     "draft/Learning from concepts.md",
     "draft/文献阅读 1月11日.md",
     "draft/核心点.md",
-    "Pasted image 20260418151419.png",
     "draft/研究背景与意义.md",
     "draft/应用落地可行性.md",
     "draft/答辩.md",
@@ -214,22 +236,12 @@
     "draft/未命名 1.md",
     "draft/rnn.md",
     "draft/未命名",
-    "draft/文献阅读4月12日.md",
     "基础理论/ML/ch1 the machine learning landscape.md",
     "基础理论/ML/Ch13 Processing Sequences Using RNNs And CNNs.md",
     "基础理论/ML/重要方法.md",
     "基础理论/ML/基础概念.md",
     "基础理论/DeepLearning/英语.md",
     "基础理论/DeepLearning/语素.md",
-    "基础理论/DeepLearning/part_I/记号.md",
-    "Pasted image 20260412001407.png",
-    "Pasted image 20260411232855.png",
-    "Pasted image 20260411224606.png",
-    "Pasted image 20260411224543.png",
-    "Pasted image 20260411224501.png",
-    "Pasted image 20260411224206.png",
-    "Pasted image 20260411170455.png",
-    "Pasted image 20260411170435.png",
     "基础理论/Build a LLM",
     "基础理论/LaTex",
     "学习日记",
