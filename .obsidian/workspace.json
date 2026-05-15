@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/对话2.md",
+                "file": "draft/Learning from concepts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "对话2"
+              "title": "Learning from concepts"
             }
           }
         ]
@@ -191,12 +191,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5c23999464e6fe3",
+  "active": "20b346972c61f98d",
   "lastOpenFiles": [
+    "draft/解构手机内容.md",
+    "draft/文献阅读3月8日.md",
+    "draft/背诵.md",
+    "draft/Untitled.md",
+    "draft/文献阅读1月25日.md",
+    "draft/sublime.md",
+    "draft/文献阅读 1月11日.md",
+    "draft/ssh.md",
+    "draft/rnn.md",
+    "draft/对话2.md",
+    "draft/对话2_副本.md",
     "draft/简历.md",
     "draft/这两周任务.md",
     "draft/对话.md",
-    "draft/对话2.md",
     "draft/文献阅读5月10日.md",
     "Pasted image 20260425133648.png",
     "Pasted image 20260510071033.png",
@@ -209,9 +219,7 @@
     "Pasted image 20260510071057.png",
     "Pasted image 20260510071045.png",
     "draft/文献阅读4月26日.md",
-    "draft/文献阅读3月8日.md",
     "draft/文献阅读4月12日.md",
-    "draft/文献阅读1月25日.md",
     "draft/未命名 2.md",
     "基础理论/ML/英语2.md",
     "基础理论/ML/英语1.md",
@@ -221,14 +229,6 @@
     "draft/云计算与虚拟化技术分析.md",
     "draft/文献SOP.md",
     "draft/文献阅读4月23日.md",
-    "draft/未命名 3.md",
-    "draft/未命名.md",
-    "draft/Learning from concepts.md",
-    "draft/文献阅读 1月11日.md",
-    "draft/核心点.md",
-    "draft/研究背景与意义.md",
-    "draft/应用落地可行性.md",
-    "draft/答辩.md",
     "draft/未命名",
     "基础理论/Build a LLM",
     "基础理论/LaTex",
