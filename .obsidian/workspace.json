@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/未命名 4.md",
+                "file": "draft/未命名 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名 4"
+              "title": "未命名 5"
             }
           }
         ]
@@ -193,8 +193,9 @@
   },
   "active": "044f87d0e4d4bc00",
   "lastOpenFiles": [
-    "draft/README_副本.md",
     "draft/未命名 4.md",
+    "draft/未命名 5.md",
+    "draft/README_副本.md",
     "draft/单词.md",
     "draft/5月31日汇报.md",
     "Pasted image 20260530211049.png",
@@ -229,7 +230,6 @@
     "draft/文献阅读4月26日.md",
     "draft/文献阅读4月12日.md",
     "draft/未命名 2.md",
-    "基础理论/ML/英语2.md",
     "draft/未命名",
     "基础理论/Build a LLM",
     "基础理论/LaTex",
