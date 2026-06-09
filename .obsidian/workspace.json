@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fd6d6d3df0d3bc01",
+        "id": "cf0dda462e79de3e",
         "type": "tabs",
         "children": [
           {
-            "id": "48ddf96a7245dac6",
+            "id": "c71352d58e513a50",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "考试/综合英语/听力.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "听力"
+              "title": "新标签页"
             }
           }
         ]
@@ -88,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.5,
-    "collapsed": true
+    "width": 322.5
   },
   "right": {
     "id": "2f4f775a6d30f43d",
@@ -192,10 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48ddf96a7245dac6",
+  "active": "c71352d58e513a50",
   "lastOpenFiles": [
-    "考试/综合英语/目录.md",
     "考试/综合英语/听力.md",
+    "考试/综合英语/目录.md",
     "考试/Untitled.md",
     "考试/综合英语",
     "考试/未命名.md",
