@@ -11,10 +11,14 @@
             "id": "c71352d58e513a50",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "科研/问题来源.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "问题来源"
             }
           }
         ]
@@ -189,6 +193,12 @@
   },
   "active": "c71352d58e513a50",
   "lastOpenFiles": [
+    "科研/想法.md",
+    "科研/问题来源.md",
+    "科研/CLIP2RS.md",
+    "科研/两个路线.md",
+    "科研/有意义的参考.md",
+    "科研",
     "考试/综合英语/听力.md",
     "考试/综合英语/目录.md",
     "考试/Untitled.md",
@@ -222,11 +232,6 @@
     "draft/背诵.md",
     "draft/文献阅读1月25日.md",
     "draft/sublime.md",
-    "draft/文献阅读 1月11日.md",
-    "draft/ssh.md",
-    "draft/rnn.md",
-    "draft/对话2.md",
-    "draft/对话2_副本.md",
     "draft/未命名",
     "基础理论/Build a LLM",
     "基础理论/LaTex",
@@ -234,7 +239,6 @@
     "基础理论/PS",
     "考试/时空数据挖掘",
     "考试/算法设计与分析_副本/第6次作业",
-    "考试/算法设计与分析_副本/第5次作业",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
