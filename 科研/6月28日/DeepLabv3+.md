@@ -7,6 +7,10 @@ Depthwise separable convolution = depthwise convolution + pointwise convolution
 
 同时让多尺度特征图同时包含空间和语义信息的方法：
 - HRNet
-- FPN
+- FPN， U-Net？
 
-想要大的感受野，但是不想stride的做法：空洞卷积？
+
+捕捉上下文信息的四种方法：
+
+
+想要大的感受野，但是不想stride的做法
