@@ -14,3 +14,7 @@ Depthwise separable convolution = depthwise convolution + pointwise convolution
 
 
 想要大的感受野，但是不想stride的做法
+
+
+spatial pyramid pooling指的到底是什么，是一张特征图被多个不同感受野的filters处理，还是让游让多张不同空间尺度的特征图产生相同尺度的输出？
+
