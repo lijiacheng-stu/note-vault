@@ -45,3 +45,4 @@ spatial pyramid pooling指的到底是什么，是一张特征图被多个不同
 - 本质上，前者模拟atrous convolution的效果，后者是standard convolution的效果，同时大小降低计算复杂度的目的。
 
 
+
