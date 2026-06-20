@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/6月28日/PSPNet.md",
+                "file": "科研/6月28日/RestNet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PSPNet"
+              "title": "RestNet"
             }
           }
         ]
@@ -193,8 +193,9 @@
   },
   "active": "73b479aa73f72e78",
   "lastOpenFiles": [
-    "科研/6月28日/单词.md",
     "科研/6月28日/PSPNet.md",
+    "科研/6月28日/RestNet.md",
+    "科研/6月28日/单词.md",
     "科研/6月28日/DeepLabv3+.md",
     "科研/6月28日/任务.md",
     "科研/6月28日/语义分割方法.md",
@@ -224,7 +225,6 @@
     "draft/核心点.md",
     "draft/应用落地可行性.md",
     "draft/研究背景与意义.md",
-    "draft/未命名 5.md",
     "Pasted image 20260613142635.png",
     "Pasted image 20260613141924.png",
     "Pasted image 20260613141624.png",
