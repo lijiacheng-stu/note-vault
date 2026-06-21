@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a207d09ad0a89365",
+        "id": "9abf1b728cec5b7f",
         "type": "tabs",
         "children": [
           {
-            "id": "73b479aa73f72e78",
+            "id": "52d32585ce77f32f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/6月28日/RestNet.md",
+                "file": "科研/6月28日/语义分割方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RestNet"
+              "title": "语义分割方法"
             }
           }
         ]
@@ -191,10 +191,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "73b479aa73f72e78",
+  "active": "52d32585ce77f32f",
   "lastOpenFiles": [
-    "科研/6月28日/PSPNet.md",
     "科研/6月28日/RestNet.md",
+    "科研/6月28日/PSPNet.md",
     "科研/6月28日/单词.md",
     "科研/6月28日/DeepLabv3+.md",
     "科研/6月28日/任务.md",
