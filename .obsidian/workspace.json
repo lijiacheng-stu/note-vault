@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "906023aced6fdd25",
+        "id": "6b9933aee676bfe7",
         "type": "tabs",
         "children": [
           {
-            "id": "00fc291c6f0781e7",
+            "id": "3ef676569f2d17a7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "框架/spring in action/1_Getting_Started_With_Spring/环境配置 + 初始化项目.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "环境配置 + 初始化项目"
+              "title": "新标签页"
             }
           }
         ]
@@ -191,10 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "00fc291c6f0781e7",
+  "active": "3ef676569f2d17a7",
   "lastOpenFiles": [
-    "框架/spring in action/1_Getting_Started_With_Spring/运行application.md",
     "框架/spring in action/1_Getting_Started_With_Spring/环境配置 + 初始化项目.md",
+    "框架/spring in action/1_Getting_Started_With_Spring/运行application.md",
     "框架/spring in action/1_Getting_Started_With_Spring/thoery.md",
     "框架/spring in action/1_Getting_Started_With_Spring/annotation.md",
     "框架/spring in action/1_Getting_Started_With_Spring/method.md",
