@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/ssh.md",
+                "file": "draft/未命名 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ssh"
+              "title": "未命名 6"
             }
           }
         ]
@@ -193,6 +193,8 @@
   },
   "active": "351d1f9a7f829503",
   "lastOpenFiles": [
+    "draft/ssh.md",
+    "draft/未命名 6.md",
     "Pasted image 20260629120657.png",
     "draft/sublime.md",
     "开发/java basics/CH1_An_Introduction_To_Java.md",
@@ -219,7 +221,6 @@
     "Pasted image 20260625173336.png",
     "Pasted image 20260625172408.png",
     "Pasted image 20260625164449.png",
-    "Pasted image 20260625164415.png",
     "draft/6月14日组会/文章阅读.md",
     "draft/6月14日组会/文章阅读组会版.md",
     "draft/6月14日组会/实验.md",
@@ -231,7 +232,6 @@
     "科研/6月14日/对CLIP2RS的探索与思考.md",
     "科研/6月14日/未命名.md",
     "科研/6月14日/复现结果.md",
-    "科研/6月14日/想法.md",
     "框架/spring in action/1_Getting_Started_With_Spring",
     "科研/6月28日",
     "科研/6月14日",
