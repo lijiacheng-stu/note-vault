@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/7月12日/实验记录.md",
+                "file": "科研/7月12日/小任务.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "实验记录"
+              "title": "小任务"
             }
           }
         ]
@@ -193,11 +193,15 @@
   },
   "active": "c379f7fb14dcaed9",
   "lastOpenFiles": [
+    "科研/7月12日/实验记录.md",
+    "Pasted image 20260710221235.png",
+    "Pasted image 20260710221148.png",
+    "Pasted image 20260710221108.png",
+    "Pasted image 20260710215833.png",
     "Pasted image 20260710213804.png",
     "Pasted image 20260710213750.png",
     "Pasted image 20260710213730.png",
     "科研/7月12日/tmux的学习使用.md",
-    "科研/7月12日/实验记录.md",
     "科研/7月12日/小任务.md",
     "科研/7月12日/环境搭建.md",
     "科研/7月12日/复现.md",
@@ -207,10 +211,6 @@
     "4dddfb16060018ea1e39ad78ab2411bb.jpg",
     "科研/7月12日/half.md",
     "科研/7月12日/full.md",
-    "79cb2134a3ac53c7adb7bed7e8af760a.jpg",
-    "11684aaa5c32229209c3726a002baa1c.jpg",
-    "2be22cd359da909c9982bd008f09daab.jpg",
-    "Pasted image 20260709201541.png",
     "考试/新中特/因地制宜发展新质生产力 夯实双循环高质量发展根基.md",
     "科研/7月12日",
     "考试/新中特/作文.md",
@@ -218,7 +218,6 @@
     "考试/新中特",
     "draft/未命名 6.md",
     "draft/ssh.md",
-    "Pasted image 20260629120657.png",
     "draft/sublime.md",
     "开发/java basics/CH1_An_Introduction_To_Java.md",
     "开发/java basics/通识.md",
