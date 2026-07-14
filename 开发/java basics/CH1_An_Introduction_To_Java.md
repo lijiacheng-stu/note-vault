@@ -25,4 +25,27 @@
  -  If you need precise numerical computations without roundoff errors, use the `BigDecimal` class
 
 - EWU是损失函数的一部分吗？
- 
+
+## 1.1 What is Spring?
+_Spring application context_
+xml file
+Java-based configuration
+ _dependency injection_ (DI)
+ Automatic configuration
+_autowiring_ 
+_component scanning_
+_autoconfiguration_
+
+## 1.2 Initializing a Spring application
+Spring project structure:
+- `mvnw` _and_ `mvnw.cmd`
+- _static_
+- _templates_
+- _pom.xml_
+
+
+_pom.xml_:
+- Spring Boot plugin
+
+
+
