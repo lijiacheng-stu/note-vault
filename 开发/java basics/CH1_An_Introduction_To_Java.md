@@ -4,6 +4,19 @@
 
 
 ## 知识点
+1. 怎么样初始化一个项目？
+2. 怎样启动一个项目
+
+
+
+
+## 对1
+![[Pasted image 20260714150839.png]]
+
+
+
+
+
  - _everything_ in a Java program lives inside a class
  - Java 25 introduced the `IO` class to simplify console input and output. Previously, you had to use the special `System.out` object
  - Java is a _strongly typed language_.There are eight _primitive types_ in Java. Four of them are integer types; two are floating-point number types; one is the character type `char`, used for UTF-16 code units in the Unicode encoding scheme (see [Section 3.3.3](https://learning.oreilly.com/library/view/core-java-vol/9780135558553/v1/ch3/index.xhtml#ch03lev2sec3)); and one is a `boolean` type for truth values.
