@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/环境配置/vscode.md",
+                "file": "开发/java basics/CH2_Developing_Web_Applications.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vscode"
+              "title": "CH2_Developing_Web_Applications"
             }
           }
         ]
@@ -193,9 +193,10 @@
   },
   "active": "d59cc7e75031cf5c",
   "lastOpenFiles": [
-    "开发/环境配置/草稿.md",
-    "开发/环境配置/vscode.md",
     "开发/java basics/CH1_An_Introduction_To_Java.md",
+    "开发/java basics/CH2_Developing_Web_Applications.md",
+    "开发/环境配置/vscode.md",
+    "开发/环境配置/草稿.md",
     "Pasted image 20260714150839.png",
     "开发/java basics/通识.md",
     "科研/7月12日/git的使用.md",
