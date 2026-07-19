@@ -11,3 +11,6 @@
 - Optional是什么数据类型
 - `private void saveIngredientRefs(long tacoId, List<IngredientRef> ingredientRefs)` 声明和调用真的匹配上了吗·saveIngredientRefs(tacoId, taco.getIngredients());·
 - implements Serializatable 啥意思？serialVersionUiD又是什么东西？
+- 怎么无损实现curd，包裹ingredient_Ref的？
+- implement `Persistable`？
+- 
