@@ -1,6 +1,8 @@
 enum类型列表和方法怎么理解？
 collect(Collectors.toList())怎么理解？
 
+- wa
+
 
 controller：
 - 决定了model，以及使用model用于渲染的view
