@@ -1,7 +1,7 @@
 enum类型列表和方法怎么理解？
 collect(Collectors.toList())怎么理解？
 
-- wa
+- war 和 jar的区别？
 
 
 controller：
