@@ -11,7 +11,15 @@
 新认识：
 - save方法之所以要返回存储的对象，是因为对象有部分信息只有在save执行后，才知道。例如，placed_at， id。
 - 类图（Class Diagram）和数据库 Schema 设计之间存在一个转换过程，叫做 Object-Relational Mapping, ORM。
-- ERD和类图是不一样的！类图是构建和可视化面向对象的系统的图像符号；ERD是一种用于数据库设计的结构图。
+- ERD和类图是不一样的！
+- 在ERD中，要将“One-to-One”, "One-to-Many"和“Many-to-Many”的关系进行存储。对于"One-to-Many"，外键如果存储在one-side那么列就不定了，在many-side可以稳定是一列，因此，在many-side；对与“Many-to-Many”，从左往右看，一对多，左边不能存，从右往左看，一对多，右边不能存。因此需要一个连接表，分别连接两边。
+
+
+
+
+类图是构建和可视化面向对象的系统的图像符号；ERD是一种用于数据库设计的结构图。
+
+
 
 问题：
 - 数据库中其他类型的数据如何转化？
