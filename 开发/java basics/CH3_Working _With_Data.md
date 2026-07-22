@@ -6,7 +6,8 @@
 - record 记录
 - Cardinality 基数
 - Business objects 业务对象
-- DDL = data definition language  
+- DDL = data definition language 
+-  cumbersome 繁琐的
 
 
 新认识(碎片)：
