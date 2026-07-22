@@ -102,5 +102,10 @@
 	- `brew services stop mysql` 关闭, 从注册的macos管理的后台服务中删除
 5. 其他：
 	- `brew config`: 查看代理配置之类
-	
-##### 对mysql前端的探索
+##### 环境配置
+- 用brew安装dbeaver，这个mysql前端
+- 用brew安装mysql，并用`brew services start mysql`启动服务
+- 用dbeaver连接mysql，并创建tacocloud这个database
+- 在vp中，也进行相应配置
+
+##### 用vp中绘制的ERD，生成正确的表格，并插入样例数据
