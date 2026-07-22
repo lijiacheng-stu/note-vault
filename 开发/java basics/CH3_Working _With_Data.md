@@ -79,3 +79,28 @@
 可以直接生成。不过需要进行一定的配置，从Database Configuration中配置默认的数据库。这个原因在于，vp需要知道生成的是哪儿个数据库的代码。此外，vp还能够执行生成的代码，所以配置的时候，还可以添加jdbc。
 #### 尝试在mac上安装mysql和前端，用于快速检验vp的能力
 ##### 对brew的探索
+前置知识：
+- 在Homebrew中，命令软件的包叫做formulae，GUI软件叫做casks。homebrew/cask和homebrew/core是Homebrew官方维护的包仓库，其他仓库叫做tap，可以配置。
+- homebrew安装的所有软件通常会在`HOMEBREW_PREFIX: /opt/homebrew`中的子目录中，GUI是例外
+
+使用场景：
+1. 如何下载一个包(以mysql为例)
+	- `brew search mysql` 查看是否有这个包
+		- 可以观察到formulae和casks两栏内容，可以通过--cask给命令，用于显示指定。
+	- `brew install mysql` 安装这个包
+	- `brew list` 查看brew管理的包中是否存在mysql
+	- `brew info mysql` 查看mysql的具体情况
+2. 如何卸载一个包：
+	- `brew uninstall mysql`
+3. 如何更新brew，以及它所管理的包
+	- `brew update`升级brew
+	- `brew upgrade mysql` 升级指定包
+	- `brew upgrade`升级所有包 
+	- 注： 一个包升级到更新版本，其旧包仍然保留
+4. 如何管理它管理包中的服务：
+	- `brew services start mysql` 启动，注册为macos管理的后台服务
+	- `brew services stop mysql` 关闭, 从注册的macos管理的后台服务中删除
+5. 其他：
+	- `brew config`: 查看代理配置之类
+	
+##### 对mysql前端的探索
