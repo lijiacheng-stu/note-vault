@@ -111,4 +111,5 @@
 
 ##### 用vp中绘制的ERD，生成正确的表格，并插入样例数据
 具体的过程`https://www.visual-paradigm.com/tutorials/sdevsgendb.jsp` 参考这个网址
-## 1.2 对h2-console的探索
+### 1.2 对h2-console的探索
+h2-console能够看h2数据库，我们发现，竟然是没办法用dbeaver连接h2数据库，得改成文件，不用内存模式才行。
