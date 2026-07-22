@@ -76,8 +76,9 @@
 - 看一下h2-console能否查看插入的表的信息
 - 写增删改查的代码，理解ORM的细节
 ### 1.1 对vp的探索
-可以直接生成。不过需要进行一定的配置，从Database Configuration中配置默认的数据库。这个原因在于，vp需要知道生成的是哪儿个数据库的代码。此外，vp还能够执行生成的代码，所以配置的时候，还可以添加jdbc。
-#### 尝试在mac上安装mysql和前端，用于快速检验vp的能力
+可以直接生成各种指定的数据库的代码。不过需要进行一定的配置，从Database Configuration中配置默认的数据库。这个原因在于，vp需要知道生成的是哪儿个数据库的代码。此外，vp还能够执行生成的代码，所以配置的时候，还可以添加jdbc。vp甚至可以插入对应的数据，不过需要在vp阶段就手动写入样例数据。
+所以vp对database操作的代码都会生成出来，用于自己的项目。
+尝试在mac上安装mysql和前端，用于快速检验vp的能力
 ##### 对brew的探索
 前置知识：
 - 在Homebrew中，命令软件的包叫做formulae，GUI软件叫做casks。homebrew/cask和homebrew/core是Homebrew官方维护的包仓库，其他仓库叫做tap，可以配置。
@@ -109,3 +110,5 @@
 - 在vp中，也进行相应配置
 
 ##### 用vp中绘制的ERD，生成正确的表格，并插入样例数据
+具体的过程`https://www.visual-paradigm.com/tutorials/sdevsgendb.jsp` 参考这个网址
+## 1.2 对h2-console的探索
