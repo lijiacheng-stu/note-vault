@@ -8,6 +8,7 @@
 - Business objects 业务对象
 - DDL = data definition language 
 -  cumbersome 繁琐的
+- formula 公式；配方 (复数, formulas，formulae `/ˈfɔːmjʊliː/`)
 
 
 新认识(碎片)：
@@ -76,4 +77,5 @@
 - 写增删改查的代码，理解ORM的细节
 ### 1.1 对vp的探索
 可以直接生成。不过需要进行一定的配置，从Database Configuration中配置默认的数据库。这个原因在于，vp需要知道生成的是哪儿个数据库的代码。此外，vp还能够执行生成的代码，所以配置的时候，还可以添加jdbc。
-- 尝试在mac上安装mysql和前端，用于快速检验vp的能力
+#### 尝试在mac上安装mysql和前端，用于快速检验vp的能力
+##### 对brew的探索
