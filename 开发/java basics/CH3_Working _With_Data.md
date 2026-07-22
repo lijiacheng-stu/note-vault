@@ -16,7 +16,8 @@
 - 类图（Class Diagram）和数据库 Schema 设计之间存在一个转换过程，叫做 Object-Relational Mapping, ORM。
 - ERD和类图是不一样的！类图是构建和可视化面向对象的系统的图像符号；ERD是一种用于数据库设计的结构图。
 - 在ERD中，要将“One-to-One”, "One-to-Many"和“Many-to-Many”的关系进行存储。对于"One-to-Many"，外键如果存储在one-side那么列就不定了，在many-side可以稳定是一列，因此，在many-side；对与“Many-to-Many”，从左往右看，一对多，左边不能存，从右往左看，一对多，右边不能存。因此需要一个连接表，分别连接两边。
-- Object-Relational Mapping(ORM):
+- JPA是Object-Relational Mapping(ORM)规范，Hibernate是对这一规范的实现，spring data jpa是对JPA的封装。h2是一个数据库，因此，和hibernate没有必然的联系。
+- JPA和JDBC之间的关系：JPA规定实现将对对象的操作映射为sql语句，并通过与数据库连接，实现这个sql。因此，很多实现，底层会用JDBC完成这个步骤。![[Pasted image 20260722224052.png]]
 
 
 认识性问题：
@@ -69,6 +70,8 @@
 
 ## 想法：
 1. 用spring-boot-starter-jdbc实现对数据的处理
+2. 用spring-boot-starter-data-jdbc实现
+3. 用spring-boot-starter-data-jpa实现
 
 ## 对想法1
 从以下方式探索：
@@ -113,3 +116,6 @@
 具体的过程`https://www.visual-paradigm.com/tutorials/sdevsgendb.jsp` 参考这个网址
 ### 1.2 对h2-console的探索
 h2-console能够看h2数据库，我们发现，竟然是没办法用dbeaver连接h2数据库，得改成文件，不用内存模式才行。
+问题：
+- 当springboot application启动后，会有一个h2的url，用h2-console访问，和dbeaver访问这同一个url时，竟然内容会不一样。
+
