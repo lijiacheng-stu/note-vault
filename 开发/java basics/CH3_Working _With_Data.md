@@ -1,5 +1,6 @@
 - data persistence 数据持久化
 - aggregate 聚合
+- aggregate root 聚合根
 - umbrella project 总项目；项目家族
 - domain model 领域模型
 - Entity 实体  （和table的含义是等价的）
@@ -9,7 +10,7 @@
 - DDL = data definition language 
 -  cumbersome 繁琐的
 - formula 公式；配方 (复数, formulas，formulae `/ˈfɔːmjʊliː/`)
-- id = identifier 标识符
+- id = identity 标识符
 
 
 新认识(碎片)：
