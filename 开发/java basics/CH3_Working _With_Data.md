@@ -27,6 +27,7 @@
 - implements Serializatable 啥意思？serialVersionUiD又是什么东西？
 - 怎么无损实现curd，包裹ingredient_Ref的？
 - implement `Persistable`？
+- h2中，每一个entity是否一定需要有PK？
 
 ## 发现
 ### 1. application context 的创建和spring boot的优势
