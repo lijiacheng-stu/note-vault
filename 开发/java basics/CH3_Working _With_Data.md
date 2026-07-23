@@ -9,6 +9,7 @@
 - DDL = data definition language 
 -  cumbersome 繁琐的
 - formula 公式；配方 (复数, formulas，formulae `/ˈfɔːmjʊliː/`)
+- id = identifier 标识符
 
 
 新认识(碎片)：
