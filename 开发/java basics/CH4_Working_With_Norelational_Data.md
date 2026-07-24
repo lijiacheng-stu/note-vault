@@ -3,3 +3,23 @@
 - SQL = Structured Query Language 
 - NoSQL = not only SQL = non-realational 
 - P2P = peer-to-peer 点对点
+- terminology 术语
+- given 指定的；给定的
+- replica 复制品；副本
+## Cassandra
+- gossip： Cassandra节点之间的通信协议。
+- masterless architecture ： Cassandra的架构，与主从架构相对，表示数据库中任意一个节点与其他节点一样提供相同的功能。
+- partition：分区。数据本身自动分发的实现技术。
+	- partition key：分区键，用于决定数据位置的键。每个node负责一个Tokens集合，partition key通过哈希函数得到Token，集合中含有此Token的节点将存储该数据。
+	- coordinator：协调节点，负责将数据分配给指定的分区。通过gossip协议与其他节点通信，知道他们Tokens集合范围，从而确定接受节点。
+	- replica node: replica 节点，相对于一份数据而言。包含其Tokens集合包含数据对应的Token的节点，叫做replica节点
+	- RF = replication factor：复制因子，一份数据可能多个replica节点存储，节点的数量就是replication factor。确保了可靠性和容错性。
+		- self-healing: 自愈，当一个节点down后，coordinator将要写入的到该节点的数据存储为一个'hint'，当这个节点恢复后，再写入，使得它与其他两个replica节点同步。
+		- load balance：负载均衡
+- CAP theorem ： C = consistent 强一致性，A = available， p = partition-tolerant (网络)分区容错性，任何分布式数据库，三个只能满足两个，cassandra选择的是AP，C可以用CL微调。
+	- 选择两个后，对第三个会产生限制。
+		- CA，得保证网络畅通。
+		- AP，得容忍网络出现问题的情况下，replica节点之间一定程度的不一致。
+		- CP，得容忍网络出现问题的情况下，无法使用，得等待网络恢复。
+- CL = consistency level：基于CF选择合适的CL，例如令CL = QUORUM，即多数。只有当coordinator收到多数replica node发送来的acknowledge，才能认为这个操作成功了。
+- deployment agnostic：与部署环境无关。
