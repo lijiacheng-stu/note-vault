@@ -60,6 +60,7 @@
 
 ### 对问题5
 jpa是不需要的。而且还需要使用CommandLineRunner或者ApplicationRunner接口加载数据。
+spring data jdbc是需要的。按照DDD的思想，Class Diagram和ERD的映射关系，从而自己吧schema.sql给搞出来。
 
 
 
@@ -108,12 +109,12 @@ jpa是不需要的。而且还需要使用CommandLineRunner或者ApplicationRunn
 2. 用spring-boot-starter-data-jdbc实现
 3. 用spring-boot-starter-data-jpa实现
 
-## 对想法1
+### 对想法1
 从以下方式探索：
 - 看一下vp是否能直接生成对应的代码，避免手动输入产生错误
 - 看一下h2-console能否查看插入的表的信息
 - 写增删改查的代码，理解ORM的细节
-### 1.1 对vp的探索
+#### 1.1 对vp的探索
 可以直接生成各种指定的数据库的代码。不过需要进行一定的配置，从Database Configuration中配置默认的数据库。这个原因在于，vp需要知道生成的是哪儿个数据库的代码。此外，vp还能够执行生成的代码，所以配置的时候，还可以添加jdbc。vp甚至可以插入对应的数据，不过需要在vp阶段就手动写入样例数据。
 所以vp对database操作的代码都会生成出来，用于自己的项目。
 尝试在mac上安装mysql和前端，用于快速检验vp的能力
@@ -149,8 +150,10 @@ jpa是不需要的。而且还需要使用CommandLineRunner或者ApplicationRunn
 
 ##### 用vp中绘制的ERD，生成正确的表格，并插入样例数据
 具体的过程`https://www.visual-paradigm.com/tutorials/sdevsgendb.jsp` 参考这个网址
-### 1.2 对h2-console的探索
-h2-console能够看h2数据库，我们发现，竟然是没办法用dbeaver连接h2数据库，得改成文件，不用内存模式才行。
-问题：
-- 当springboot application启动后，会有一个h2的url，用h2-console访问，和dbeaver访问这同一个url时，竟然内容会不一样。
+#### 1.2 对h2-console的探索
+h2-console,可以通过执行sql来进行crud。
+- 我发现，对存存在主键的entity，查询后，下面出现edit按钮，否则没有，必须用sql改。
+- h2-console作为一个h2的前端，dbeaver也是作为其前端，用相同的URL，访问到的结果不同。
+#### 1.3 对h2的探索
+
 
