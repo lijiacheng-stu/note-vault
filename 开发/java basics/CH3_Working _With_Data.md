@@ -22,14 +22,46 @@
 - JPA和JDBC之间的关系：JPA规定实现将对对象的操作映射为sql语句，并通过与数据库连接，实现这个sql。因此，很多实现，底层会用JDBC完成这个步骤。![[Pasted image 20260722224052.png]]
 
 
-认识性问题：
-- 数据库中其他类型的数据如何转化？
-- Optional是什么数据类型
-- `private void saveIngredientRefs(long tacoId, List<IngredientRef> ingredientRefs)` 声明和调用真的匹配上了吗·saveIngredientRefs(tacoId, taco.getIngredients());·
-- implements Serializatable 啥意思？serialVersionUiD又是什么东西？
-- 怎么无损实现curd，包裹ingredient_Ref的？
+## 认识性问题：
+1. 数据库的数据类型和java中的数据类型是如何转换的？
+2. Optional是什么数据类型
+3. `private void saveIngredientRefs(long tacoId, List<IngredientRef> ingredientRefs)` 声明和调用真的匹配上了吗saveIngredientRefs(tacoId, taco.getIngredients());·
+4.  h2中，每一个entity是否一定需要有PK？
+5. spring data jdbc和spring data jpa，它们会根据注解，将repository中的函数声明映射成对应的sql，那么隐含了数据库schema的设计。那么是否还需要自己设计schema，并放在在schema.sql中？
+-  implements Serializatable 啥意思？serialVersionUiD又是什么东西？ 
 - implement `Persistable`？
-- h2中，每一个entity是否一定需要有PK？
+- 怎么无损实现curd，包裹ingredient_Ref的？
+- 为什么JPA，在`@OneToMany`的情况下，默认是把关系存在一个额外的表表中，而不是把FK存在many那一边？
+	- 功能上，两种都可用。
+	- 存储上，FK在many一边占优
+	- 灵活性上，额外的联合表占优
+	- ![[Pasted image 20260724123843.png]]
+	- 单独存关系，就算在One-To-Many的情况下，也都是有优势的。灵活性，关系的元数据，实体的耦合性等等。
+
+### 对问题1
+数据库的数据类型，和Java中的数据类型，存在一定的映射关系：
+![[Pasted image 20260724125555.png]]
+- **`JdbcTemplate.update()` 中 SQL 的 `?` 占位符，会根据你传入的 Java 参数类型，自动设置对应的 JDBC 类型**，然后由 JDBC Driver 转换成数据库能理解的类型。
+- 既然存在这种映射关系，是否`PreparedStatementCreatorFactory`是不是意义不大了呢？
+	- 不是。
+		- `pscf.setReturnGeneratedKeys(true);`
+		- ![[Pasted image 20260724130129.png]]
+
+### 对问题2
+- Optional是一个对象的容器，容器存在两种状态，空或者存在一个指定数据类型的对象。
+- 它存在的意义是，调用者不直接得到null或对象，且一定得到Optional容器。这样调用者必须要处理null的情况，而不因为忘了存在这种情况，出现空指针错误。
+	- `orElse()`
+### 对问题3
+看了官方提供的源码，它修改了Taco中的ingredients属性，从`private List<Ingredient> ingredients` 改为了`private List<IngredientRef> ingredients`, 因此匹配得上。
+这体现了domain- driven design的思想，属于不同的aggregate的entity之间的关联，不直接引用entity，而是引用entity_id，而且只引用aggregate root的entity的entity_id。
+
+### 对问题4
+不一定
+
+### 对问题5
+jpa是不需要的。而且还需要使用CommandLineRunner或者ApplicationRunner接口加载数据。
+
+
 
 ## 发现
 ### 1. application context 的创建和spring boot的优势
