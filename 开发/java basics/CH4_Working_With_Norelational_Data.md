@@ -1,0 +1,5 @@
+- so-called 所谓的
+- spice 香料；调味品 /spaɪs/
+- SQL = Structured Query Language 
+- NoSQL = not only SQL = non-realational 
+- P2P = peer-to-peer 点对点
