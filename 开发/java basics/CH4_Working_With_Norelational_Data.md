@@ -24,3 +24,7 @@
 		- CP，得容忍网络出现问题的情况下，无法使用，得等待网络恢复。
 - CL = consistency level：基于CF选择合适的CL，例如令CL = QUORUM，即多数。只有当coordinator收到多数replica node发送来的acknowledge，才能认为这个操作成功了。
 - deployment agnostic：与部署环境无关。
+
+## Docker
+- Network Interface Card  = NIC 网卡
+Docker objects：images, containers, networks, and volumes，plugins
