@@ -7,6 +7,7 @@
 - given 指定的；给定的
 - replica 复制品；副本
 ## Cassandra
+- Cassandra /kəˈsændrə/
 - gossip： Cassandra节点之间的通信协议。
 - masterless architecture ： Cassandra的架构，与主从架构相对，表示数据库中任意一个节点与其他节点一样提供相同的功能。
 - partition：分区。数据本身自动分发的实现技术。
