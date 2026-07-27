@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "492d9020021e05b6",
+        "id": "5e55bb707c577f2b",
         "type": "tabs",
         "children": [
           {
-            "id": "d59cc7e75031cf5c",
+            "id": "e1b905bee2b76ad6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/7月26日/CEGFNet参照版.md",
+                "file": "科研/8月9日/为MGFNet增加解码器.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CEGFNet参照版"
+              "title": "为MGFNet增加解码器"
             }
           }
         ]
@@ -190,11 +190,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d59cc7e75031cf5c",
+  "active": "e1b905bee2b76ad6",
   "lastOpenFiles": [
+    "科研/8月9日/任务.md",
+    "科研/8月9日/为MGFNet增加解码器.md",
+    "科研/重要内容的学习节点.md",
+    "科研/必背.md",
+    "开发/java basics/CH3_Working _With_Data.md",
+    "开发/java basics/CH4_Working_With_Norelational_Data.md",
+    "科研/7月12日/汇报脚本.md",
+    "科研/7月12日/保存成果.md",
+    "科研/7月12日/git的使用.md",
+    "科研/7月12日/tmux的学习使用.md",
+    "科研/7月26日/7月26日-李嘉成-文献阅读汇报.md",
     "科研/7月26日/CEGFNet汇报版.md",
-    "科研/7月26日/CEGFNet参照版.md",
     "科研/7月26日/CEGFNet 1.md",
+    "科研/7月12日/实验记录.md",
+    "科研/7月12日/暑期任务.md",
+    "科研/8月9日",
+    "科研/7月26日/CEGFNet参照版.md",
     "Pasted image 20260725232130.png",
     "Pasted image 20260725224051.png",
     "Pasted image 20260725223558.png",
@@ -214,20 +228,7 @@
     "Pasted image 20260725141703.png",
     "Pasted image 20260725141118.png",
     "Pasted image 20260725140453.png",
-    "开发/java basics/CH3_Working _With_Data.md",
-    "开发/java basics/CH4_Working_With_Norelational_Data.md",
-    "科研/必背.md",
     "科研/6月14日/6月14日组会.md",
-    "科研/6月14日/对CLIP2RS的探索与思考.md",
-    "科研/6月14日/有意义的参考.md",
-    "科研/6月14日/两个路线.md",
-    "科研/6月14日/CLIP2RS.md",
-    "开发/java basics/测试用例.md",
-    "开发/java basics/通识.md",
-    "开发/java basics/CH2_Developing_Web_Applications.md",
-    "开发/java basics/CH1_An_Introduction_To_Java.md",
-    "开发/环境配置/vscode.md",
-    "开发/环境配置/草稿.md",
     "科研/7月26日",
     "科研/7月12日",
     "考试/新中特",
@@ -237,7 +238,6 @@
     "框架/spring in action/1_Getting_Started_With_Spring",
     "科研/6月28日",
     "科研/6月14日",
-    "draft/6月14日组会",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
