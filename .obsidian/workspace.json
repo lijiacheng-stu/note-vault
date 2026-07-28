@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/7月12日/复现.md",
+                "file": "科研/8月9日/为MGFNet增加解码器.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "复现"
+              "title": "为MGFNet增加解码器"
             }
           }
         ]
@@ -192,17 +192,20 @@
   },
   "active": "e1b905bee2b76ad6",
   "lastOpenFiles": [
-    "科研/7月12日/保存成果.md",
-    "科研/7月12日/汇报脚本.md",
+    "Pasted image 20260728001346.png",
+    "科研/8月9日/任务.md",
+    "科研/8月9日/为MGFNet增加解码器.md",
+    "开发/docker/CH4_The_Big_Picture.md",
+    "开发/java basics/CH4_Working_With_Norelational_Data.md",
+    "开发/docker",
     "科研/7月12日/tmux的学习使用.md",
     "科研/7月12日/复现.md",
+    "科研/7月12日/保存成果.md",
+    "科研/7月12日/汇报脚本.md",
     "科研/7月12日/暑期任务.md",
-    "科研/8月9日/为MGFNet增加解码器.md",
-    "科研/8月9日/任务.md",
     "科研/重要内容的学习节点.md",
     "科研/必背.md",
     "开发/java basics/CH3_Working _With_Data.md",
-    "开发/java basics/CH4_Working_With_Norelational_Data.md",
     "科研/7月12日/git的使用.md",
     "科研/7月26日/7月26日-李嘉成-文献阅读汇报.md",
     "科研/7月26日/CEGFNet汇报版.md",
@@ -222,8 +225,6 @@
     "科研/6月28日/DeepLabv3+汇报.md",
     "科研/6月28日/任务.md",
     "科研/6月28日/单词.md",
-    "科研/6月28日/RestNet.md",
-    "科研/6月28日/DeepLabv3+汇报版.md",
     "Pasted image 20260725155508.png",
     "Pasted image 20260725141921.png",
     "Pasted image 20260725141703.png",
@@ -237,7 +238,6 @@
     "开发",
     "框架/spring in action/1_Getting_Started_With_Spring",
     "科研/6月28日",
-    "科研/6月14日",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
