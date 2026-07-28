@@ -15,13 +15,13 @@ NFM ：相邻尺度特征融合模块
 ![[Pasted image 20260728001346.png]]
 
 ### full_v1
-
+![[Pasted image 20260728160810.png]]
 ### half_sar
-
+![[Pasted image 20260728160848.png]]
 ### half_opt
-
+![[Pasted image 20260728160908.png]]
 ### article
-
+![[Pasted image 20260728160747.png]]
 
 ## 版本2： UNet decode style
 - deconvolutional network
