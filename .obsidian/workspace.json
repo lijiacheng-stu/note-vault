@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/docker/CH4_The_Big_Picture.md",
+                "file": "科研/8月9日/创新.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CH4_The_Big_Picture"
+              "title": "创新"
             }
           }
         ]
@@ -193,16 +193,18 @@
   "active": "e1b905bee2b76ad6",
   "lastOpenFiles": [
     "科研/8月9日/为MGFNet增加解码器.md",
+    "科研/8月9日/创新.md",
+    "科研/8月9日/任务.md",
+    "Pasted image 20260728183145.png",
+    "开发/docker/CH4_The_Big_Picture.md",
     "Pasted image 20260728160908.png",
     "Pasted image 20260728160848.png",
     "Pasted image 20260728160810.png",
     "Pasted image 20260728160747.png",
     "科研/重要内容的学习节点.md",
     "科研/7月12日/tmux的学习使用.md",
-    "科研/8月9日/任务.md",
     "科研/7月12日/复现.md",
     "Pasted image 20260728001346.png",
-    "开发/docker/CH4_The_Big_Picture.md",
     "开发/java basics/CH4_Working_With_Norelational_Data.md",
     "开发/docker",
     "科研/7月12日/保存成果.md",
@@ -221,7 +223,6 @@
     "Pasted image 20260725224051.png",
     "Pasted image 20260725223558.png",
     "Pasted image 20260725223121.png",
-    "Pasted image 20260725222839.png",
     "科研/6月28日/对DeepLabv3+的关键问题.md",
     "科研/6月28日/补充材料.md",
     "科研/6月28日/语义分割方法.md",
