@@ -1,3 +1,4 @@
+python scripts/train.py --cfg configs/MGFNet_YESeg.yaml
 ## 版本1:  简化版UNet decode style
 - 用双线性插值替代deconvolutional network
 具体设计：
@@ -9,7 +10,18 @@ NFM ：相邻尺度特征融合模块
 超参数提取：
 - 分辨率倍增，是直接通过对自下而上的特征对w，h参数的提取实现。这可以在forward的时候，直接完成
 - 通道数减少半，需要超参数，用目标通道数来比描述
+
+### full_v2
 ![[Pasted image 20260728001346.png]]
+
+### full_v1
+
+### half_sar
+
+### half_opt
+
+### article
+
 
 ## 版本2： UNet decode style
 - deconvolutional network
