@@ -3,4 +3,4 @@
 - ops = operations 运维
 - DevOps？
 - containerized the app = That’s jargon for building it into a container image that contains the app and dependencies.
-- 
+- tamper 篡改
