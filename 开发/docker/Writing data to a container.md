@@ -2,6 +2,11 @@
 - tty，终端模拟器，session，进程组之间的关系？
 - 如何理解docker attach container_name？
 
+
+docker中，实现docker attach的原理是：
+- 在容器侧，shell程序启动，并且连在了pty的slave端；又一个程序连在master侧，这个程序有一个网络端口，将从master侧读到的发送出去，将从网口侧读到的写到master侧；
+- 在local macine侧，有一个进程，它通过网络与在容器侧的master侧的进程进行通信。这个进程本身连在了一个pty的slave侧，而pty的master侧连在了terminal emulator。这个模式是raw模式。
+
 ## 问题2
 
 一个session会分配一个tty，一个session中有多个进程组。所有的进程组都连在tty上，但是从tty读数据的资格给其中一个进程组，被分配到tty的进程组叫做foreground process group，没被分配到的叫做background process group。
