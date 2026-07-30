@@ -1,6 +1,20 @@
 - 终端模拟器，如何连接其他的master？
 - tty，终端模拟器，session，进程组之间的关系？
 - 如何理解docker attach container_name？
+- docker run -it的意义？
+
+### 问题2
+当打开一个终端模拟器的时候，除了打开终端模拟器进程外，还会打开一个shell进程，申请一个pty(伪终端)。pty有两段slave端和master端，slave端连接shell进程，master端连接终端模拟器进程。slave端在shell进程看来和一个正常的物理终端没有任何区别。终端模拟器从master端输入的东西，会从slave输出被shell读；shell写入slave的东西，会从master输出被终端模拟器读。在这两个端口中间存在line discipline，用于逐行输入输出，而且可以修改一些内容，把特殊的字节转化正signal发送出去等。使line discipline失效的模式就是raw mode。
+一个session会分配一个tty，一个session中有多个进程组。所有的进程组都连在tty上，但是从tty读数据的资格给其中一个进程组，被分配到tty的进程组叫做foreground process group，没被分配到的叫做background process group。`fg 1`用于把background process group成为foreground process group；还有`bg`。jobs可以看到当前shell进程所关联的所有background process group。
+
+
+### 问题3
+存在一个pty，它的slave端连接container中的shell进程上，master端口被Linux VM里的一个进程连接着，并且这个进程可以以某种通信协议与宿主机中的进程通信。
+宿主机，在docker attach container_name后，启动一个进程，它专门与连接master端口的进程进行通信。这个进程同时也连在宿主机的另一个pty的slave口与连接对应的master口的终端模拟器以raw mode通信。
+ssh也是这样的原理。
+
+
+
 
 
 docker中，实现docker attach的原理是：
@@ -9,7 +23,7 @@ docker中，实现docker attach的原理是：
 
 ## 问题2
 
-一个session会分配一个tty，一个session中有多个进程组。所有的进程组都连在tty上，但是从tty读数据的资格给其中一个进程组，被分配到tty的进程组叫做foreground process group，没被分配到的叫做background process group。
+
 如何上面的理论是正确的，那么正在运行的background process group的输出，其输出可以直接通过tty输出到终端模拟器上，但是不接受`ctrl + C`和`ctrl + Z` 。
 lijiacheng@lijiachengdeMac-mini-5 unix % cat pcircle.c 
 
