@@ -5,4 +5,9 @@ docker run --rm -d alpine sleep 20
 
 
 
-
+docker run 
+- --name 给容器命名
+- -it 是否给主进程配pty，是否让terminal emulator的输入流能与主进程互动
+- --restart  配置容器的重启策略
+- --rm 配置容器关闭后是否删除
+- 命令，配置启动主进程的命令，可以覆盖CMD，但是无法覆盖entrypoint

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/docker/对运行机制的梳理.md",
+                "file": "开发/docker/对docker的认识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "对运行机制的梳理"
+              "title": "对docker的认识"
             }
           }
         ]
@@ -194,8 +194,8 @@
   },
   "active": "e1b905bee2b76ad6",
   "lastOpenFiles": [
-    "开发/docker/对docker的认识.md",
     "开发/docker/对运行机制的梳理.md",
+    "开发/docker/对docker的认识.md",
     "开发/docker/实验.md",
     "开发/docker/Writing data to a container.md",
     "开发/docker/未命名.md",
