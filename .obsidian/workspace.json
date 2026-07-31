@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Writing data to a container"
             }
+          },
+          {
+            "id": "10ee289d55c5efcc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.13.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,7 +54,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTimeReverse",
-                "autoReveal": true
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -190,7 +205,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e1b905bee2b76ad6",
+  "active": "10ee289d55c5efcc",
   "lastOpenFiles": [
     "科研/8月9日/创新.md",
     "科研/8月9日/为MGFNet增加解码器.md",
