@@ -7,6 +7,8 @@
 - given 指定的；给定的
 - replica 复制品；副本
 ## Cassandra
+
+### 单词
 - Cassandra /kəˈsændrə/
 - gossip： Cassandra节点之间的通信协议。
 - masterless architecture ： Cassandra的架构，与主从架构相对，表示数据库中任意一个节点与其他节点一样提供相同的功能。
@@ -24,7 +26,6 @@
 		- CP，得容忍网络出现问题的情况下，无法使用，得等待网络恢复。
 - CL = consistency level：基于CF选择合适的CL，例如令CL = QUORUM，即多数。只有当coordinator收到多数replica node发送来的acknowledge，才能认为这个操作成功了。
 - deployment agnostic：与部署环境无关。
-
-## Docker
-- Network Interface Card  = NIC 网卡
-Docker objects：images, containers, networks, and volumes，plugins
+-  ACID = atomicity + consistency + isolation + durability
+### 入门
+ 
