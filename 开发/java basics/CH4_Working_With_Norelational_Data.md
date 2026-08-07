@@ -28,4 +28,6 @@
 - deployment agnostic：与部署环境无关。
 -  ACID = atomicity + consistency + isolation + durability
 ### 入门
+这里的rack是什么？
  
+![[Pasted image 20260807201357.png]]
