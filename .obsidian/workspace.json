@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "5e55bb707c577f2b",
+        "id": "9ea72e471356b5d2",
         "type": "tabs",
         "children": [
           {
-            "id": "e1b905bee2b76ad6",
+            "id": "17b74639d49f5dea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "科研/卫星资源任务规划算法/需求分析/内容三技术路线.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "内容三技术路线"
-            }
-          },
-          {
-            "id": "d5fa14f4edd6f7ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "科研/卫星资源任务规划算法/讨论/径向基函数.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "径向基函数"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -207,10 +188,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5fa14f4edd6f7ce",
+  "active": "d5c23999464e6fe3",
   "lastOpenFiles": [
-    "科研/卫星资源任务规划算法/入门/精确需求的描述维度.md",
+    "科研/卫星资源任务规划算法/入门/入门.md",
+    "科研/卫星资源任务规划算法/入门/对一个指定卫星，它成像质量的影响因素.md",
     "科研/卫星资源任务规划算法/讨论/径向基函数.md",
+    "科研/卫星资源任务规划算法/入门/精确需求的描述维度.md",
     "科研/卫星资源任务规划算法/讨论",
     "开发/cassandra/basic command.md",
     "科研/卫星资源任务规划算法/入门",
@@ -218,7 +201,6 @@
     "开发/cassandra",
     "Pasted image 20260807201357.png",
     "科研/卫星资源任务规划算法/入门/要求.md",
-    "科研/卫星资源任务规划算法/入门/入门.md",
     "科研/卫星资源任务规划算法/需求分析/组会手稿.md",
     "科研/卫星资源任务规划算法/需求分析/内容三技术路线.md",
     "科研/卫星资源任务规划算法/需求分析/未命名 2.md",
@@ -241,7 +223,6 @@
     "科研/卫星资源任务规划算法/需求分析/需求分析-核心骨干.md",
     "科研/卫星资源任务规划算法/需求分析/组会/未命名.md",
     "科研/卫星资源任务规划算法/需求分析/基于多目标优化与柔性约束的双轨协同规划需求.md",
-    "科研/卫星资源任务规划算法/需求分析/复杂异构卫星感知需求的统一建模与约束对齐需求.md",
     "Pasted image 20260805113539.png",
     "Pasted image 20260805112913.png",
     "科研/卫星资源任务规划算法/需求分析/组会",
