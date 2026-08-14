@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "总体框架"
             }
+          },
+          {
+            "id": "88192848a3792653",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.13.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,7 +205,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "17b74639d49f5dea",
+  "active": "88192848a3792653",
   "lastOpenFiles": [
     "科研/卫星资源任务规划算法/内容三/核心算法的解读.md",
     "科研/卫星资源任务规划算法/内容三/总体框架.md",
