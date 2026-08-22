@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/必背.md",
+                "file": "科研/9月6日/任务.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "必背"
+              "title": "任务"
             }
           }
         ]
@@ -193,12 +193,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5c23999464e6fe3",
+  "active": "2507cd8107df71bb",
   "lastOpenFiles": [
+    "科研/必背.md",
+    "科研/9月6日/任务.md",
+    "科研/9月6日",
     "科研/卫星资源任务规划算法/汇总/要求.md",
     "科研/卫星资源任务规划算法/要求.md",
     "科研/卫星资源任务规划算法/内容三/为递归而进行调整.md",
-    "科研/必背.md",
     "科研/时间节点.md",
     "科研/卫星资源任务规划算法/内容三/总体框架.md",
     "科研/卫星资源任务规划算法/汇总/稿子.md",
@@ -223,7 +225,6 @@
     "科研/卫星资源任务规划算法/需求分析/未命名 2.md",
     "开发/java basics/CH4_Working_With_Norelational_Data.md",
     "开发/java basics/CH2_Developing_Web_Applications.md",
-    "开发/java basics/CH3_Working _With_Data.md",
     "科研/卫星资源任务规划算法/讨论",
     "科研/卫星资源任务规划算法/入门",
     "开发/cassandra",
@@ -235,7 +236,6 @@
     "Pasted image 20260805112913.png",
     "科研/卫星资源任务规划算法/需求分析/组会",
     "科研/卫星资源任务规划算法/需求分析",
-    "科研/tea任务 1",
     "Pasted image 20260729133722.png",
     "Pasted image 20260728183145.png",
     "Pasted image 20260728160908.png",
