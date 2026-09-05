@@ -1,4 +1,4 @@
-python scripts/train.py --cfg configs/MGFNet_YESeg.yaml
+			python scripts/train.py --cfg configs/MGFNet_YESeg.yaml
 ## 版本1:  简化版UNet decode style
 - 用双线性插值替代deconvolutional network
 具体设计：
