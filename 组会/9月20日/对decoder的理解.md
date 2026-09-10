@@ -23,3 +23,7 @@
 4. 如何理解注意力分数矩阵
 	- 从行的角度看：第 i个 Query向量对各个 Key向量的关注程度
 	- 从列的角度看：第j个key向量被各个Query向量的关注程度
+5. 对decoder-only model的理解
+	- step1: 通过掩码自注意力 + FFN，得到上下文嵌入
+	- step2: 对最后一个token的上下文嵌入通过FFN + softmax得到下一个token的预测
+		- 最后一层最后一个token的上下文嵌入的获得依赖n-1层1～m个上下文嵌入的获得
