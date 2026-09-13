@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "组会/9月20日/对transfomer的理解.md",
+                "file": "组会/9月20日/小tips.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "对transfomer的理解"
+              "title": "小tips"
             }
           }
         ]
@@ -195,15 +195,16 @@
   },
   "active": "08a270deba597d1e",
   "lastOpenFiles": [
-    "Pasted image 20260913175159.png",
+    "组会/9月20日/关键技术摘要.md",
+    "组会/9月20日/小tips.md",
+    "组会/9月20日/speeding up transformers.md",
     "组会/9月20日/对transfomer的理解.md",
+    "Pasted image 20260913175159.png",
     "Pasted image 20260913175100.png",
     "Pasted image 20260913175047.png",
     "组会/9月20日/对decoder的理解.md",
     "组会/9月20日/任务.md",
     "组会/9月20日/术语.md",
-    "组会/9月20日/speeding up transformers.md",
-    "组会/9月20日/关键技术摘要.md",
     "组会/9月20日/疑惑.md",
     "组会/9月20日/未命名 1.md",
     "组会/9月20日/未命名 2.md",
@@ -240,7 +241,6 @@
     "Pasted image 20260805113539.png",
     "Pasted image 20260805112913.png",
     "Pasted image 20260729133722.png",
-    "Pasted image 20260728183145.png",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
