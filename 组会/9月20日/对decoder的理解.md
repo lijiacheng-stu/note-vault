@@ -2,6 +2,7 @@
 	- 输入的是token embeddings，输出的是contextual embeddings
 	- 第i个token只能通过使用前i个token（包括第i个）的信息获得该token地contextual embedding
 	- 本质上仍然是对句子中每一个token对应含义进行建模，区别在于因果的。（掩码自注意力仍然是在为每个 token 计算一个融合上下文信息的表示，只不过这种上下文信息受到因果掩码的限制。）这里的因果的指的是自回归的过程中，要求能够通过第i个token的上下文嵌入推理第i+1的token，第i个token只能知道第1～i个token的信息，所以第i个token地上下文嵌入也只能利用第1～i个token的信息。
+	- 
 2. 对KV Cache的理解
 	- 推理阶段，对于第i个token地上下文嵌入，不会随着新token的加入而发生改变，继而基于此上下文嵌入得到的对vocabulary length大的概率向量也是不变的。
 		- 证明：
