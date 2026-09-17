@@ -1,2 +1,2 @@
-- safari收藏标签页
+- safari收藏标签页 approve
 - 
