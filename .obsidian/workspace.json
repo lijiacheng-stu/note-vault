@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "组会/9月20日/对PE的研究/RoPE.md",
+                "file": "组会/9月20日/对PE的研究/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RoPE"
+              "title": "未命名"
             }
           }
         ]
@@ -195,8 +195,9 @@
   },
   "active": "08a270deba597d1e",
   "lastOpenFiles": [
-    "组会/9月20日/任务.md",
     "组会/9月20日/对PE的研究/RoPE.md",
+    "组会/9月20日/对PE的研究/未命名.md",
+    "组会/9月20日/任务.md",
     "组会/9月20日/对PE的研究",
     "组会/9月20日/claude-code-cli/需求解决方案.md",
     "组会/9月20日/claude-code-cli/常见的需求.md",
@@ -232,7 +233,6 @@
     "报告",
     "组会/9月20日",
     "组会/8月9日/为MGFNet增加解码器.md",
-    "组会/9月6日/transformer.md",
     "组会/9月6日",
     "Pasted image 20260819141649.png",
     "报告/卫星资源任务规划算法/汇总",
