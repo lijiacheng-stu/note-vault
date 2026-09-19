@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "组会/9月20日/claude-code-cli/需求解决方案.md",
+                "file": "组会/9月20日/claude-code-cli/常见的需求.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "需求解决方案"
+              "title": "常见的需求"
             }
           }
         ]
@@ -195,8 +195,8 @@
   },
   "active": "08a270deba597d1e",
   "lastOpenFiles": [
-    "组会/9月20日/claude-code-cli/常见的需求.md",
     "组会/9月20日/claude-code-cli/需求解决方案.md",
+    "组会/9月20日/claude-code-cli/常见的需求.md",
     "组会/9月20日/任务.md",
     "组会/9月20日/对PE的研究/未命名.md",
     "组会/9月20日/对PE的研究/RoPE.md",
