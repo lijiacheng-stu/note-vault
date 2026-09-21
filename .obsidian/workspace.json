@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "组会/10月4日/任务.md",
+                "file": "组会/对遥感图像语义分割的理解/遥感图像语义分割.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "任务"
+              "title": "遥感图像语义分割"
             }
           }
         ]
@@ -195,7 +195,10 @@
   },
   "active": "dec4abaef9b3bdd9",
   "lastOpenFiles": [
-    "组会/10月4日/未命名.md",
+    "组会/10月4日/术语.md",
+    "组会/10月4日/路线.md",
+    "组会/对遥感图像语义分割的理解/遥感图像语义分割.md",
+    "组会/对遥感图像语义分割的理解",
     "组会/10月4日/任务.md",
     "组会/9月20日/文献阅读汇报/辅助资料.md",
     "组会/9月20日/对decoder的理解.md",
@@ -233,14 +236,10 @@
     "组会/9月20日/ch17-speeding Up Transformers/Faster Training/概览.md",
     "组会/9月20日/ch17-speeding Up Transformers/未命名.md",
     "组会/9月20日/ch17-speeding Up Transformers/Faster Training",
-    "组会/9月20日/ch17-speeding Up Transformers/仍需研究.md",
-    "组会/9月20日/ch17-speeding Up Transformers/术语.md",
-    "组会/9月20日/关键技术摘要.md",
     "组会/9月20日/ch17-speeding Up Transformers",
     "组会/9月20日/SegFormer",
     "组会/9月20日/ch18-Autocoder,GANs,And Diffusion Models",
     "报告",
-    "组会/9月20日",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
