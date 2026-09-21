@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3d2b4e7fd75cb49d",
+        "id": "88a62f34ef2a46d5",
         "type": "tabs",
         "children": [
           {
-            "id": "77b0ffee85155285",
+            "id": "dec4abaef9b3bdd9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "组会/9月20日/文献阅读汇报/9月20日-李嘉成-文献阅读汇报.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "9月20日-李嘉成-文献阅读汇报"
+              "title": "新标签页"
             }
           }
         ]
@@ -193,8 +189,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "77b0ffee85155285",
+  "active": "dec4abaef9b3bdd9",
   "lastOpenFiles": [
+    "组会/9月20日/任务.md",
     "组会/9月20日/文献阅读汇报/辅助资料.md",
     "组会/9月20日/文献阅读汇报/9月20日-李嘉成-文献阅读汇报.md",
     "Pasted image 20260920015618.png",
@@ -216,7 +213,6 @@
     "组会/9月20日/文献阅读汇报",
     "组会/8月9日/创新.md",
     "组会/8月9日/为MGFNet增加解码器.md",
-    "组会/9月20日/任务.md",
     "组会/9月20日/claude-code-cli/常见的需求.md",
     "组会/9月20日/claude-code-cli/需求解决方案.md",
     "组会/9月20日/对PE的研究/未命名.md",
