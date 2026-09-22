@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "88a62f34ef2a46d5",
+        "id": "7bd5b304ea211687",
         "type": "tabs",
         "children": [
           {
-            "id": "dec4abaef9b3bdd9",
+            "id": "52a1afe0ab3f1f23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "组会/对遥感图像语义分割的理解/遥感图像语义分割.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "遥感图像语义分割"
+              "title": "新标签页"
             }
           }
         ]
@@ -193,11 +189,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dec4abaef9b3bdd9",
+  "active": "52a1afe0ab3f1f23",
   "lastOpenFiles": [
+    "组会/对遥感图像语义分割的理解/遥感图像语义分割.md",
     "组会/10月4日/术语.md",
     "组会/10月4日/路线.md",
-    "组会/对遥感图像语义分割的理解/遥感图像语义分割.md",
     "组会/对遥感图像语义分割的理解",
     "组会/10月4日/任务.md",
     "组会/9月20日/文献阅读汇报/辅助资料.md",
