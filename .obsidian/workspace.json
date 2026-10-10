@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Method"
             }
+          },
+          {
+            "id": "64fb77b513589b6b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.14.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,7 +206,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "52a1afe0ab3f1f23",
+  "active": "64fb77b513589b6b",
   "lastOpenFiles": [
     "组会/9月6日/transformer.md",
     "组会/9月6日/任务.md",
