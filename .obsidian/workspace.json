@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/java basics/依赖/Spring Data JPA的使用.md",
+                "file": "开发/java basics/依赖/Lombok.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spring Data JPA的使用"
+              "title": "Lombok"
             }
           }
         ],
@@ -210,8 +210,8 @@
   },
   "active": "cbedcc20cd440c51",
   "lastOpenFiles": [
-    "开发/java basics/CH5_Securing Spring/单词.md",
     "开发/java basics/依赖/Spring Data JPA的使用.md",
+    "开发/java basics/CH5_Securing Spring/单词.md",
     "开发/java basics/依赖/Lombok.md",
     "开发/java basics/CH5_Securing Spring/笔记.md",
     "开发/java basics/CH3_Working _With_Data.md",
