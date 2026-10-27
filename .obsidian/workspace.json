@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/java basics/CH5_Securing Spring/疑惑.md",
+                "file": "开发/java basics/依赖/Spring Data JPA的使用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "疑惑"
+              "title": "Spring Data JPA的使用"
             }
           }
         ],
@@ -210,12 +210,20 @@
   },
   "active": "cbedcc20cd440c51",
   "lastOpenFiles": [
+    "开发/java basics/依赖/Lombok.md",
+    "开发/java basics/依赖/Spring Data JPA的使用.md",
+    "开发/java basics/CH5_Securing Spring/笔记.md",
+    "开发/java basics/CH3_Working _With_Data.md",
     "开发/java basics/CH5_Securing Spring/单词.md",
+    "开发/java basics/CH5_Securing Spring/疑惑.md",
+    "开发/java basics/依赖",
+    "Pasted image 20261027212521.png",
+    "Pasted image 20261027212513.png",
+    "Pasted image 20261027212457.png",
     "组会/毕业要求/课程要求.md",
     "组会/毕业要求/文章要求.md",
     "开发/环境配置/vscode.md",
     "开发/环境配置/草稿.md",
-    "开发/java basics/CH5_Securing Spring/疑惑.md",
     "开发/java basics/CH4_Working_With_Norelational_Data.md",
     "开发/java basics/CH5_Securing Spring",
     "组会/11月8日/目标.md",
@@ -236,12 +244,8 @@
     "组会/10月25日/构建数据集/哨兵/英文.md",
     "Pasted image 20261023210018.png",
     "Pasted image 20261023145426.png",
-    "组会/10月25日/构建数据集/Google Earth/结构.md",
     "组会/10月25日/实验",
-    "组会/10月25日/构建数据集/Google Earth/非正射问题.md",
-    "组会/10月25日/文献阅读/文章四/信息.md",
     "组会/10月25日/构建数据集/Google Earth",
-    "组会/10月25日/文献阅读/文章四/文章信息.md",
     "组会/10月25日/文献阅读/文章四",
     "组会/毕业要求",
     "组会/10月25日/构建数据集/lansat",
@@ -250,12 +254,8 @@
     "Pasted image 20261019221049.png",
     "Pasted image 20261019220920.png",
     "Pasted image 20261019212909.png",
-    "Pasted image 20261019210142.png",
-    "Pasted image 20261019210051.png",
     "组会/10月25日/构建数据集/哨兵",
     "组会/10月25日/文献阅读/文章三",
-    "Pasted image 20261016123651.png",
-    "组会/开题/未命名",
     "未命名.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
