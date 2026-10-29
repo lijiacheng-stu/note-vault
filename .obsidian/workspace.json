@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/java basics/CH6_Workin_With_Configuration_Properties/解答.md",
+                "file": "开发/java basics/CH5_Securing Spring/任务.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "解答"
+              "title": "任务"
             }
           }
         ],
@@ -210,9 +210,11 @@
   },
   "active": "cbedcc20cd440c51",
   "lastOpenFiles": [
-    "开发/java basics/CH6_Workin_With_Configuration_Properties/疑惑.md",
-    "开发/java basics/CH6_Workin_With_Configuration_Properties/英文.md",
+    "开发/java basics/CH6_Workin_With_Configuration_Properties/任务.md",
     "开发/java basics/CH6_Workin_With_Configuration_Properties/解答.md",
+    "开发/java basics/CH6_Workin_With_Configuration_Properties/疑惑.md",
+    "开发/java basics/CH1_An_Introduction_To_Java.md",
+    "开发/java basics/CH6_Workin_With_Configuration_Properties/英文.md",
     "开发/java basics/CH5_Securing Spring/疑惑.md",
     "开发/java basics/CH5_Securing Spring/任务.md",
     "开发/java basics/CH6_Workin_With_Configuration_Properties",
@@ -244,8 +246,6 @@
     "组会/10月25日/实验/解答.md",
     "组会/10月25日/实验/疑惑.md",
     "组会/10月25日/实验/规划.md",
-    "组会/必背.md",
-    "组会/时间节点.md",
     "Pasted image 20261023210018.png",
     "Pasted image 20261023145426.png",
     "组会/10月25日/实验",
