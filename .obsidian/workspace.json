@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/java basics/CH5_Securing Spring/CSRF.md",
+                "file": "开发/java basics/学习笔记/10月30日.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSRF"
+              "title": "10月30日"
             }
           }
         ],
@@ -210,14 +210,16 @@
   },
   "active": "cbedcc20cd440c51",
   "lastOpenFiles": [
+    "开发/java basics/依赖/Spring Data JPA的使用.md",
     "开发/java basics/依赖/Thymeleaf.md",
-    "开发/java basics/框架/如何写一个表单.md",
+    "开发/java basics/学习笔记/10月30日.md",
+    "开发/java basics/学习笔记",
     "开发/java basics/CH5_Securing Spring/CSRF.md",
+    "开发/java basics/框架/如何写一个表单.md",
     "开发/java basics/CH5_Securing Spring/疑惑.md",
     "开发/java basics/CH5_Securing Spring/笔记.md",
     "开发/java basics/CH5_Securing Spring/单词.md",
     "开发/java basics/依赖/Lombok.md",
-    "开发/java basics/依赖/Spring Data JPA的使用.md",
     "开发/java basics/框架/SpringMVC的理解.md",
     "开发/java basics/框架/碎笔.md",
     "开发/java basics/CH5_Securing Spring/任务.md",
@@ -245,14 +247,12 @@
     "组会/10月25日/实验/参考.md",
     "组会/10月4日/任务.md",
     "组会/11月8日",
-    "组会/10月25日/实验/解答.md",
     "Pasted image 20261023210018.png",
     "Pasted image 20261023145426.png",
     "组会/10月25日/实验",
     "组会/10月25日/构建数据集/Google Earth",
     "组会/10月25日/文献阅读/文章四",
     "组会/毕业要求",
-    "组会/10月25日/构建数据集/lansat",
     "Pasted image 20261019221129.png",
     "Pasted image 20261019221051.png",
     "Pasted image 20261019221049.png",
