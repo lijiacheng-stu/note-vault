@@ -9,6 +9,7 @@ View libraries such as Thymeleaf are designed to be decoupled from any particula
  - th:text, performs the replacement.
  - th:each, iterates over a collection of elements, rendering the HTML once for each item in the collection.
  - th:field, ultimately sets the `<input>` element’s `name` attribute
+ - th:action，是form标签的属性，决定要不要注入 CSRF。Thymeleaf 的 Spring 集成里有个专门处理 action 的处理器，只要标签上写了 th:action，它就会调用 Spring 的 RequestDataValueProcessor 往表单里塞 _csrf 隐藏字段。和值的写法无关。
 
 operator：
 - ${}，use the value of a request attribute
