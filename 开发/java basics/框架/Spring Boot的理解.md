@@ -1,2 +1,2 @@
 - component scanning
-- 
+- autoconfiguration
