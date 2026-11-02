@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/Claude code/未命名.md",
+                "file": "开发/Claude code/目的.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "目的"
             }
           }
         ],
@@ -200,8 +200,9 @@
   },
   "active": "cbedcc20cd440c51",
   "lastOpenFiles": [
-    "开发/Claude code/Code review.md",
     "开发/Claude code/未命名.md",
+    "开发/Claude code/目的.md",
+    "开发/Claude code/Code review.md",
     "开发/Claude code/context management.md",
     "开发/Claude code/英文.md",
     "开发/Claude code/The explore → plan → code → commit workflow.md",
@@ -234,7 +235,6 @@
     "开发/java basics/依赖/Lombok.md",
     "开发/java basics/CH5_Securing Spring/任务.md",
     "开发/java basics/CH6_Workin_With_Configuration_Properties/任务.md",
-    "开发/java basics/CH6_Workin_With_Configuration_Properties/解答.md",
     "开发/java basics/CH6_Workin_With_Configuration_Properties",
     "Pasted image 20261028234402.png",
     "Pasted image 20261028112801.png",
